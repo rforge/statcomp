@@ -47,5 +47,17 @@ echo $contents; } ?>
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
 
+
+<p> <strong>Detailed description:<\strong> </p>
+
+Statistical complexity and information measures are statistical tools to quantify entropy and complexity in time series and hence to distinguish deterministic chaos from randomness (see e.g. Bandt and Pompe 2002).
+
+These measures are based on the "ordinal pattern distribution" of the time series (an alternative to a histogram-like representation with some advantages). We specifically provide a range of different permutation coding schemes for calculating the Fisher Information (see e.g. Olivares et al 2012).
+In addition, measure to quantify the statistical distance between ordinal pattern distributions are provided (e.g. Hellinger Distance).
+
+Related papers:
+Bandt, C., & Pompe, B. (2002). Permutation entropy: a natural complexity measure for time series. Physical review letters, 88(17), 174102.
+Rosso, O. A., Larrondo, H. A., Martin, M. T., Plastino, A., & Fuentes, M. A. (2007). Distinguishing noise from chaos. Physical review letters, 99(15), 154102.
+Olivares, F., Plastino, A., & Rosso, O. A. (2012). Contrasting chaos with noise via local versus global information quantifiers. Physics Letters A, 376(19), 1577-1583.
 </body>
 </html>
