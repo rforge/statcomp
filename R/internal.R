@@ -9,7 +9,7 @@
 #' @export
 var.fun = function(x) var(x) * (length(x) - 1) / length(x)
 
-#
+#ä
 # ------------------------------------------------------
 # Internal functions to compute pattern coding schemes:
 # all permutation codings are defined as ranks (i.e. in contrast to e.g. Olivares et al 2012)
