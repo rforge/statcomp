@@ -8,7 +8,6 @@
 #' @param opd A numeric vector that comprises an ordinal pattern distribution in the Keller coding scheme (Physica A 356 (2005) 114-120).
 #' @param ndemb Embedding dimension of the ordinal patterns (i.e. sliding window size).
 #' @param target_pattern If specified, must consist of a numeric matrix of the dimensions c(factorial(ndemb), ndemb), which consists of a user-specified permutation coding scheme ('ranks-based').
-#' @param use_target_pattern Logical. Must be set to TRUE if target_pattern is supplied. If set to FALSE, transform_vec must be specified. Default is T.
 #' @param transform_vec If specified, a numeric vector that contains indices to change an ordinal pattern distribution from the (original) coding scheme to any user-specified permutation coding scheme.
 #' @details 
 #' This function returns an ordinal pattern distribution in a user-specified permutation coding scheme.
@@ -18,10 +17,10 @@
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)
 #' opd = ordinal_pattern_distribution(x = x, ndemb = 6)
-changePermCodingOPD = function(opd, ndemb, target_pattern, use_target_pattern = T, transform_vec = NA) {
+changePermCodingOPD = function(opd, ndemb, target_pattern = NA, transform_vec = NA) {
   
   # function to change permutation coding in ordinal pattern distribution:
-  if (use_target_pattern == T) {
+  if (!is.na(target_pattern)) {
     transform_vec = transformPermCoding(target_pattern=target_pattern, ndemb = ndemb)
   }
   

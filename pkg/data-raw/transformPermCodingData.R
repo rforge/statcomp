@@ -34,11 +34,11 @@ names(transformPermCodingData) = c("lehmerperm", "kellerperm", "lehmerperm_bitfl
                                       "lehmerperm_jumps_adjusted", "kellerperm_jumps_adjusted", "lehmerperm_Olivares", "kellerperm_Olivares")
 
 transformPermCodingData$lehmerperm[paste(ndemb)]
-setwd("/Users/ssippel/code/statcomp/")
+setwd("/Users/ssippel/code/R_packages/statcomp/pkg/data-raw/")
 save(transformPermCodingData, file="transformPermCodingData.RData")
 
-setwd("/Users/ssippel/code/R_packages/statcomp/")
-load("/Users/ssippel/code/statcomp/transformPermCodingData.RData")
+# setwd("/Users/ssippel/code/R_packages/statcomp/")
+load("/Users/ssippel/code/R_packages/statcomp/pkg/data-raw/transformPermCodingData.RData")
 use_data(transformPermCodingData, internal=T)
 use_data_raw()
 

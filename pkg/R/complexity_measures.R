@@ -16,7 +16,7 @@
 #' @export
 #' @description Computation of the permutation entropy of a time series based on its ordinal pattern distribution (see Bandt and Pompe 2002). 
 #' Permutation entropy is a global information measure, hence insensitive to the permutation ordering scheme.
-#' @usage permutation_entropy(odp)
+#' @usage permutation_entropy(odp, x = NA, ndemb = NA, PatternCoding = "Default")
 #' @param opd A numeric vector that details an ordinal pattern distribution.
 #' @details 
 #' This function calculates the permutation entropy as described in Bandt and Pompe 2002.
@@ -97,42 +97,43 @@ MPR_complexity = function(opd) {
 #' @title A function to compute the Fisher-information
 #' @export
 #' @description The function computes the Fisher information, i.e. a local information measure.
-#' @usage fisher_information(odp)
+#' @usage fisher_information(odp, x = NA, ndemb = NA, PatternCoding = "Default")
 #' @param opd A numeric vector that details an ordinal pattern distribution in a user-specified permutation coding scheme.
 #' @param x (OPTIONAL) If opd is not specified, a time series vector x must be specified
 #' @param ndemb (OPTIONAL) If x is given, the embedding dimension (ndemb) is required.
-#' @param defaultCoding Logical. If TRUE, the Fisher information is computed based on the ordinal pattern distribution (opd) specified, or based on the default Keller coding scheme. If FALSE, the ordinal pattern distribution must be given in the default coding scheme (i.e. Keller and Sinn, 2005), and the Fisher information based on various pattern coding schemes is returned.
+#' @param PatternCoding Character vector that specifies the pattern coding to use for calculating the Fisher Information. If "Default" is given, the Fisher Information is computed based on the (given) ordinal pattern distribution. Else, any pattern coding scheme can be given. 
+#' Logical. If TRUE, the Fisher information is computed based on the given ordinal pattern distribution. If FALSE, the ordinal pattern distribution must be given in the default coding scheme (i.e. Keller and Sinn, 2005), and the Fisher information based on various pattern coding schemes is returned.
 #' @details 
 #' The Fisher information is a local information and complexity measure, computed based on the ordinal pattern distribution. 
 #' The Fisher information is based on local gradients, hence it is sensitive to the permutation coding scheme.
-#' @return The normalized Fisher information measure in the range [0; 1]. If defaultCoding is TRUE, returns the Fisher information measure based on various permutation coding schemes.
+#' @return The normalized Fisher information measure in the range [0; 1]. If PatternCoding is specified, returns the Fisher information measure based on the specified permutation coding scheme.
 #' @references Olivares et al (2012): Physica A 391 (2012) 2518–2526
 #' @author Sebastian Sippel
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)
 #' opd = ordinal_pattern_distribution(x = x, ndemb = 6)
 #' fisher_information(opd = opd)
-fisher_information = function(opd = NA, x = NA, ndemb = NA, defaultCoding = F) {
+fisher_information = function(opd = NA, x = NA, ndemb = NA, PatternCoding = "Default") {
+  
   # if no ordinal pattern distribution is specified:
   if (is.na(opd)) {
     opd = ordinal_pattern_distribution(x=x, ndemb = ndemb)
   }
   
-  if (defaultCoding == F) {
-      # convert to probabilities:
-      opd.prob = opd / sum(opd)
-    
-      ## calculate Fisher information according to Olivares et al 2012
-      fis = sum(sapply(1:(length(opd)-1), FUN=function(i) return((sqrt(opd.prob[i+1]) - sqrt(opd.prob[i]))^2))) / 2
-      return(fis)
+  if (PatternCoding == "Default") {
+    # return fisher information of given pattern coding scheme:
+      return(fis(opd))
   } else {
     # calculate Fisher information for different pattern coding schemes:
-    fis_patterns = sapply(transformPermCodingData, FUN= function(i) {
-      opd.temp = changePermCodingOPD(opd=opd, ndemb=ndemb, transform_vec=unlist(i[paste(ndemb)]), use_target_pattern=F)
-      return(fis(opd.temp))
-    } )
-    names(fis_patterns) = paste("fis_",names(x=transformPermCodingData), sep="")
-    return(fis_patterns)
+    opd.temp = changePermCodingOPD(opd=opd, ndemb=ndemb, transform_vec=transformPermCodingData[[PatternCoding]][[paste(ndemb)]])
+    return(fis(opd=opd.temp))
+    
+    # fis_patterns = sapply(transformPermCodingData, FUN= function(i) {
+    #  opd.temp = changePermCodingOPD(opd=opd, ndemb=ndemb, transform_vec=unlist(i[paste(ndemb)]), use_target_pattern=F)
+    #  return(fis(opd.temp))
+    # } )
+    # names(fis_patterns) = paste("fis_",names(x=transformPermCodingData), sep="")
+    # return(fis_patterns)
   }
 }
 
@@ -197,20 +198,17 @@ global_complexity = function(x = NA, opd = NA, ndemb) {
 }
 
 
-#' @title A function to compute global and local information and complexity measures for time series
+#' @title A function to compute local information measures for time series
 #' @export
-#' @description This is a high-level function that calculates local and global complexity measures directly from a given time series or ordinal pattern distribution.
+#' @description This is a high-level function that calculates local complexity measures directly from a given time series or ordinal pattern distribution.
 #' This function combines function to calculate global complexity nd information measures (global_complexity) with the Fisher information (fisher_information).
-#' @usage statistical_complexity(x = NA, opd = NA, ndemb)
+#' @usage local_complexity(x = NA, opd = NA, ndemb)
 #' @param opd A numeric vector that details an ordinal pattern distribution in a user-specified permutation coding scheme.
 #' @param x (OPTIONAL) If opd is not specified, a time series vector x must be specified
 #' @param ndemb (OPTIONAL) If x is given, the embedding dimension (ndemb) is required.
 #' @details 
 #' This function calculates the following global and local measures of complexity and information:
 #' \itemize{
-#'  \item{Permutation Entropy (PE, cf. Bandt and Pompe, 2002)}
-#'  \item{Permutation Statistical complexity (MPR complexity, cf. Martin, Plastino and Rosso, 2006)}
-#'  \item{Number of "forbiden patterns" (cf. Amigo 2010)}
 #'  \item{Fisher information based on ordinal patterns (cf. Olivares et al 2012), using the following coding schemes:}
 #'  \itemize{
 #'  \item{"lehmerperm"}
@@ -233,23 +231,29 @@ global_complexity = function(x = NA, opd = NA, ndemb) {
 #' @author Sebastian Sippel
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)
-#' statistical_complexity(x = x, ndemb = 6)
+#' local_complexity(x = x, ndemb = 6)
 #' # or:
 #' opd = ordinal_pattern_distribution(x = x, ndemb = 6)
-#' statistical_complexity(opd = opd, ndemb = 6)
-statistical_complexity = function(x = NA, opd = NA, ndemb) {
+#' local_complexity(opd = opd, ndemb = 6)
+local_complexity = function(x = NA, opd = NA, ndemb) {
   # if no ordinal pattern distribution is specified:
   if (is.na(opd)) {
     opd = ordinal_pattern_distribution(x=x, ndemb = ndemb)
   }
   
-  # calculate global complexity:
-  global_complexity_measures = global_complexity(opd=opd)
+  # calculate local complexity:
+   fis_patterns = sapply(transformPermCodingData, FUN= function(i) {
+    opd.temp = changePermCodingOPD(opd=opd, ndemb=ndemb, transform_vec=unlist(i[paste(ndemb)]))
+    return(fis(opd.temp))
+   } )
+   names(fis_patterns) = paste("fis_",names(x=transformPermCodingData), sep="")
+   return(fis_patterns)
+  
   
   # calculate local complexity:
-  fis_patterns = fisher_information(opd=opd, ndemb = ndemb)
+  # fis_patterns = fisher_information(opd=opd, ndemb = ndemb)
 
-  return(c(global_complexity_measures, fis_patterns))
+  return(fis_patterns)
 }
 
 
@@ -281,6 +285,17 @@ shannon_entropy = function(opd) {
   opd.prob = opd / sum(opd)
   H_s = (-1) * sum(sapply(opd.prob, FUN=function(prob) if (prob >= 1.e-30) return(prob * log(prob)) else return(0)))
   return(H_s)
+}
+
+# compute fisher information for ordinal pattern distribution:
+#' @keywords internal
+fis = function(opd) {
+  # convert to probabilities:
+  opd.prob = opd / sum(opd)
+  
+  ## calculate Fisher information according to Olivares et al 2012
+  fis = sum(sapply(1:(length(opd)-1), FUN=function(i) return((sqrt(opd.prob[i+1]) - sqrt(opd.prob[i]))^2))) / 2
+  return(fis)
 }
 
 

@@ -4,7 +4,7 @@
 \alias{fisher_information}
 \title{A function to compute the Fisher-information}
 \usage{
-fisher_information(odp)
+fisher_information(odp, x = NA, ndemb = NA, PatternCoding = "Default")
 }
 \arguments{
 \item{opd}{A numeric vector that details an ordinal pattern distribution in a user-specified permutation coding scheme.}
@@ -13,10 +13,11 @@ fisher_information(odp)
 
 \item{ndemb}{(OPTIONAL) If x is given, the embedding dimension (ndemb) is required.}
 
-\item{defaultCoding}{Logical. If TRUE, the Fisher information is computed based on the ordinal pattern distribution (opd) specified, or based on the default Keller coding scheme. If FALSE, the ordinal pattern distribution must be given in the default coding scheme (i.e. Keller and Sinn, 2005), and the Fisher information based on various pattern coding schemes is returned.}
+\item{PatternCoding}{Character vector that specifies the pattern coding to use for calculating the Fisher Information. If "Default" is given, the Fisher Information is computed based on the (given) ordinal pattern distribution. Else, any pattern coding scheme can be given.
+Logical. If TRUE, the Fisher information is computed based on the given ordinal pattern distribution. If FALSE, the ordinal pattern distribution must be given in the default coding scheme (i.e. Keller and Sinn, 2005), and the Fisher information based on various pattern coding schemes is returned.}
 }
 \value{
-The normalized Fisher information measure in the range [0; 1]. If defaultCoding is TRUE, returns the Fisher information measure based on various permutation coding schemes.
+The normalized Fisher information measure in the range [0; 1]. If PatternCoding is specified, returns the Fisher information measure based on the specified permutation coding scheme.
 }
 \description{
 The function computes the Fisher information, i.e. a local information measure.

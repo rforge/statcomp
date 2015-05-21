@@ -4,7 +4,7 @@
 \alias{permutation_entropy}
 \title{A function to compute the permutation entropy}
 \usage{
-permutation_entropy(odp)
+permutation_entropy(odp, x = NA, ndemb = NA, PatternCoding = "Default")
 }
 \arguments{
 \item{opd}{A numeric vector that details an ordinal pattern distribution.}

@@ -13,8 +13,6 @@ changePermCodingOPD(opd, ndemb, target_pattern, use_target_pattern = T, transfor
 
 \item{target_pattern}{If specified, must consist of a numeric matrix of the dimensions c(factorial(ndemb), ndemb), which consists of a user-specified permutation coding scheme ('ranks-based').}
 
-\item{use_target_pattern}{Logical. Must be set to TRUE if target_pattern is supplied. If set to FALSE, transform_vec must be specified. Default is T.}
-
 \item{transform_vec}{If specified, a numeric vector that contains indices to change an ordinal pattern distribution from the (original) coding scheme to any user-specified permutation coding scheme.}
 }
 \value{
