@@ -43,12 +43,7 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
-<p> No content added. </p>
-
-<p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
-
-
-<p> <strong>Detailed description:<\strong> </p>
+<p> <strong>Detailed description: <\strong> </p>
 
 Statistical complexity and information measures are statistical tools to quantify entropy and complexity in time series and hence to distinguish deterministic chaos from randomness (see e.g. Bandt and Pompe 2002).
 
@@ -59,5 +54,10 @@ Related papers:
 Bandt, C., & Pompe, B. (2002). Permutation entropy: a natural complexity measure for time series. Physical review letters, 88(17), 174102.
 Rosso, O. A., Larrondo, H. A., Martin, M. T., Plastino, A., & Fuentes, M. A. (2007). Distinguishing noise from chaos. Physical review letters, 99(15), 154102.
 Olivares, F., Plastino, A., & Rosso, O. A. (2012). Contrasting chaos with noise via local versus global information quantifiers. Physics Letters A, 376(19), 1577-1583.
+
+
+<p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
+
+
 </body>
 </html>
