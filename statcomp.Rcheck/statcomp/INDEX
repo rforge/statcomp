@@ -1,0 +1,20 @@
+MPR_complexity          A function to compute the MPR-complexity
+changePermCodingOPD     A function to change the ordering scheme of
+                        ordinal patterns
+fisher_information      A function to compute the Fisher-information
+generateCodingScheme    A function to generate a variety of permutation
+                        coding schemes
+global_complexity       A function to compute global information and
+                        complexity measures for time series
+hellinger_distance      Distance measure between ordinal pattern
+                        distributions: Hellinger distance
+limit_curves            Limit curves in the Entropy-Complexity plane
+local_complexity        A function to compute local information
+                        measures for time series
+ordinal_pattern_distribution
+                        A function to compute ordinal pattern
+                        statistics
+permutation_entropy     A function to compute the permutation entropy
+weighted_ordinal_pattern_distribution
+                        A function to compute weighted ordinal pattern
+                        statistics
