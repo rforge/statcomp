@@ -116,7 +116,7 @@ MPR_complexity = function(opd) {
 fisher_information = function(opd = NA, x = NA, ndemb = NA, PatternCoding = "Default") {
   
   # if no ordinal pattern distribution is specified:
-  if (is.na(opd)) {
+  if (any(is.na(opd))) {
     opd = ordinal_pattern_distribution(x=x, ndemb = ndemb)
   }
   
