@@ -1,6 +1,5 @@
 ## Sebastian Sippel
 # 05.01.2014
-
 #' @title A function to compute ordinal pattern statistics
 #' @export
 #' @description Computation of the ordinal patterns of a time series (see e.g. Bandt and Pompe 2002)

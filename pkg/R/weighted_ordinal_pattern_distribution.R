@@ -63,3 +63,8 @@ weighted_ordinal_pattern_distribution = function(x, ndemb, weight.fun = var.fun)
   # ifrec is the ordinal pattern distribution in the Keller coding scheme!
   return(w_ifrec)
 }
+
+
+
+
+weighted_ordinal_pattern_distribution(x=runif(30000), ndemb = 4, weight.fun=var)

@@ -1,3 +1,0 @@
-load("/Users/ssippel/code/R_packages/statcomp/pkg/R/sysdata.rda")
-ls()
-load("/Users/ssippel/code/R_packages/statcomp/pkg/data/test.rda")
