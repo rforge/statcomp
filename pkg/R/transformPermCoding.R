@@ -39,6 +39,17 @@ transformPermCoding <- function(target_pattern = NA, ndemb) {
 
 # Generate NEW pattern coding schemes:
 # ----------------------------------------------------------------------------
+#' @title A function to create new pattern-coding schemes for the Fisher Information.
+#' @export
+#' @description Adjusts and reorders a pattern ordering matrix.
+#' @usage adjust_pattern(target_pattern, ndemb)
+#' @param target_pattern A numeric matrix that specifies the pattern to be transformed into the position vector. ATTENTION: Pattern should be in the ranks permutation notation, otherwise does not really make sense.
+#' @param ndemb Embedding dimension of the ordinal patterns (i.e. sliding window size). Should be chosen such as length(x) >> ndemb
+#' @details 
+#' This function reorders permutations based on "jumps" or based on "bitflips".
+#' @return A numeric matrix that contains the permutation matrix.
+#' @references Sebastian Sippel (2014). Master Thesis. University of Bayreuth.
+#' @author Sebastian Sippel
 adjust_pattern <- function(pattern_matrix, adjustment = "jumps") {
   if (adjustment == "jumps") {
     patterns_njumps = njumps(pattern_matrix)
@@ -56,8 +67,17 @@ adjust_pattern <- function(pattern_matrix, adjustment = "jumps") {
 # -------------------------------
 # FOR INTERNAL USE
 # -------------------------------
-# converts ranks to permutations (and back!)
-# write description !!
+#' @title A function to convert a "ranks-based" permutation notation to an "index-based" permutation scheme.
+#' @export
+#' @description Converts permutations denoted by ranks to permutations denoted by indices and back.
+#' @usage rank_to_permutation(target_pattern, permutation.notation)
+#' @param pattern A numeric vector that denotes a permutation pattern.
+#' @param permutation.notation The permutation notation that should be used. Could be "Olivares.2012" or "Keller.2005".
+#' @details 
+#' This function converts ranks to indices and back.
+#' @return A numeric vector, which contains the transformed permutation.
+#' @references Sebastian Sippel (2014). Master Thesis. University of Bayreuth.
+#' @author Sebastian Sippel
 rank_to_permutation <- function(pattern, permutation.notation = "Olivares.2012") {
   
   n = length(pattern)
@@ -82,9 +102,18 @@ rank_to_permutation <- function(pattern, permutation.notation = "Olivares.2012")
 
 
 # Generate Lehmer matrix following Olivares et al 2012:
-# write description !
-generate_lehmerperm_matrix <- function(N) {
-  return(t(sapply(1:factorial(N), FUN=function(x) lehmerperm(N=N, M = x) - 1)))
+#' @title A function to generate the Lehmer permutation ordering.
+#' @export
+#' @description Generates all permutations of a given embedding dimension, ordered according to the Lehmer coding scheme.
+#' @usage generate_lehmerperm_matrix(ndemb)
+#' @param ndemb The embedding dimension.
+#' @details 
+#' This function converts ranks to indices and back.
+#' @return A numeric matrix that contains the Lehmer permutation pattern.
+#' @references http://www.keithschwarz.com/interesting/code/?dir=factoradic-permutation
+#' @author Sebastian Sippel
+generate_lehmerperm_matrix <- function(ndemb) {
+  return(t(sapply(1:factorial(ndemb), FUN=function(x) lehmerperm(N=ndemb, M = x) - 1)))
 }
 
 

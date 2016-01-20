@@ -131,11 +131,7 @@ MPR_complexity = function(opd) {
 #' global_complexity(opd = opd, ndemb = 6)
 global_complexity = function(x = NA, opd = NA, ndemb) {
   # if no ordinal pattern distribution is specified:
-  if (is.na(opd)) {
-    opd = ordinal_pattern_distribution(x=x, ndemb = ndemb)
-  } else if (opd=="C") {
-    opd = ordinal_pattern_distribution_2(x=x, ndemb = ndemb)
-  }
+  if (is.na(opd))  opd = ordinal_pattern_distribution(x=x, ndemb = ndemb)
 
   # calculate global complexity measures:
   H_s = permutation_entropy(opd)
@@ -175,7 +171,7 @@ shannon_entropy = function(opd) {
 #' @title A (low-level) function to compute the Fisher-information
 #' @export
 #' @description The function computes the Fisher information, i.e. a local information measure based on two different discretizations.
-#' @usage fis(odp)
+#' @usage fis(odp, discretization)
 #' @param opd A numeric vector that details an ordinal pattern distribution in a user-specified permutation coding scheme.
 #' @details
 #' The Fisher information is a local information and complexity measure, computed based on the ordinal pattern distribution.
