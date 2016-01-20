@@ -4,7 +4,7 @@
 \alias{fis}
 \title{A (low-level) function to compute the Fisher-information}
 \usage{
-fis(odp)
+fis(odp, discretization)
 }
 \arguments{
 \item{opd}{A numeric vector that details an ordinal pattern distribution in a user-specified permutation coding scheme.}
