@@ -34,7 +34,7 @@ weighted_ordinal_pattern_distribution = function(x, ndemb) {
             as.integer(ndemb),
             numeric(nfac),
             as.integer(nfac),NAOK=T)[[4]]
-  
+    
   # ifrec is the ordinal pattern distribution in the Keller coding scheme!
   return(wifrec)
 }
