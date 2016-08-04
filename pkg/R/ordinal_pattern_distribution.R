@@ -52,7 +52,7 @@ ordinal_pattern_distribution = function(x, ndemb) {
 #' @author Sebastian Sippel
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)
-#' ordinal_pattern_distribution(x = x, ndemb = 6)
+#' ordinal_pattern_time_series(x = x, ndemb = 6)
 ordinal_pattern_time_series = function(x, ndemb) {
   
   
