@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <Rdefines.h>
-void ordinal_pattern_loop(double *x, int *nx, int *ndemb, int *ifrec, int *nifrec)
+void ordinal_pattern_loop(double *x, int *nx, int *ndemb, int *ifrec, int *nifrec, int *xts)
 {
     int ipa[*ndemb][*ndemb];
     int nd;
@@ -35,6 +35,7 @@ void ordinal_pattern_loop(double *x, int *nx, int *ndemb, int *ifrec, int *nifre
         nd =(ilag+1) * nd + ipa[*ndemb-1][ilag];
       }
       ifrec[nd] = ifrec[nd] + 1;
+      xts[nv] = nd;
     }
 
 }

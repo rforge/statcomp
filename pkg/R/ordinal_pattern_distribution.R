@@ -31,12 +31,50 @@ ordinal_pattern_distribution = function(x, ndemb) {
            as.integer(length(x)),
            as.integer(ndemb),
            integer(nfac),
-           as.integer(nfac),NAOK=T)[[4]]
+           as.integer(nfac),as.integer(rep(0,length(x))),NAOK=T)[[4]]
   
   # ifrec is the ordinal pattern distribution in the Keller coding scheme!
   return(ifrec)
 }
 
+
+#' @title A function to compute time series of ordinal patterns
+#' @export
+#' @description Computation of the ordinal patterns of a time series (see e.g. Bandt and Pompe 2002)
+#' @usage ordinal_pattern_time_series(x, ndemb)
+#' @param x A numeric vector (e.g. a time series), from which the ordinal pattern time series is to be calculated  
+#' @param ndemb Embedding dimension of the ordinal patterns (i.e. sliding window size). Should be chosen such as length(x) >> ndemb
+#' @details 
+#' This function returns the distribution of ordinal patterns using the Keller coding scheme, detailed in Physica A 356 (2005) 114-120. NA values are allowed, and any pattern that contains at least one NA value will be ignored.
+#' (Fast) C routines are used for computing ordinal patterns.
+#' @return A character vector of length(x) is returned.
+#' @references Bandt and Pompe, 2002.
+#' @author Sebastian Sippel
+#' @examples
+#' x = arima.sim(model=list(ar = 0.3), n = 10^4)
+#' ordinal_pattern_distribution(x = x, ndemb = 6)
+ordinal_pattern_time_series = function(x, ndemb) {
+  
+  
+  epsilon=1.e-10
+  npdim=factorial(ndemb)
+  
+  #Berechnungs der Ordnungsstatistik nach der Kodierung von Karsten Keller:
+  #Physica A 356 (2005) 114-120
+  
+  nfac=factorial(ndemb)
+  
+  ifrec_ts=.C("ordinal_pattern_loop",
+           as.double(x),
+           as.integer(length(x)),
+           as.integer(ndemb),
+           integer(nfac),
+           as.integer(nfac),as.integer(rep(0,length(x))),NAOK=T)[[6]]
+  ifrec_ts[(length(ifrec_ts) - (ndemb-2)):length(ifrec_ts)] <- NA
+  
+  # ifrec is the ordinal pattern distribution in the Keller coding scheme!
+  return(ifrec_ts)
+}
 
 
 ## Sebastian Sippel
