@@ -1,0 +1,37 @@
+MPR_complexity          A function to compute the MPR-complexity
+adjust_pattern          A function to create new pattern-coding schemes
+                        for the Fisher Information.
+fis                     A (low-level) function to compute the
+                        Fisher-information
+generate_lehmerperm_matrix
+                        A function to generate the Lehmer permutation
+                        ordering.
+global_complexity       A function to compute global information and
+                        complexity measures for time series
+hellinger_distance      Distance measure between ordinal pattern
+                        distributions: Hellinger distance
+limit_curves            Limit curves in the Entropy-Complexity plane
+nbitflips               A function to compute bitflip statistics and
+                        time series
+ordinal_pattern_distribution
+                        A function to compute ordinal pattern
+                        statistics
+ordinal_pattern_distribution_2
+                        A function to compute ordinal pattern
+                        statistics
+ordinal_pattern_time_series
+                        A function to compute time series of ordinal
+                        patterns
+permutation_entropy     A function to compute the permutation entropy
+rank_to_permutation     A function to convert a "ranks-based"
+                        permutation notation to an "index-based"
+                        permutation scheme.
+transformPermCoding     A function to generate a vector from an
+                        index-transformation vector from a permutation
+                        coding scheme
+weighted_ordinal_pattern_distribution
+                        A function to compute weighted ordinal pattern
+                        statistics
+weighted_ordinal_pattern_distribution_2
+                        A function to compute weighted ordinal pattern
+                        statistics

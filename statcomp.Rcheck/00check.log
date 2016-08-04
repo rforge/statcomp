@@ -1,0 +1,202 @@
+* using log directory ‘/Users/ssippel/code/R_packages/statcomp/statcomp/statcomp.Rcheck’
+* using R version 3.2.4 (2016-03-10)
+* using platform: x86_64-apple-darwin13.4.0 (64-bit)
+* using session charset: UTF-8
+* checking for file ‘statcomp/DESCRIPTION’ ... OK
+* this is package ‘statcomp’ version ‘0.0.0.9000’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘statcomp’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Authors@R field gives more than one person with maintainer role:
+  Sebastian Sippel <ssippel@bgc-jena.mpg.de> [aut, cre]
+  Holger Lange <Holger.Lange@nibio.no> [aut, cre]
+  Fabian Gans <fgans@bgc-jena.mpg.de> [aut, cre]
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... WARNING
+Foreign function calls without 'PACKAGE' argument:
+  .C("ordinal_pattern_loop", ...)
+  .C("ordinal_pattern_loop", ...)
+  .C("weighted_ordinal_pattern_loop", ...)
+See chapter ‘System and foreign language interfaces’ in the ‘Writing R
+Extensions’ manual.
+* checking R code for possible problems ... NOTE
+nbitflips: no visible global function definition for ‘rollapply’
+* checking Rd files ... WARNING
+MPR_complexity.Rd: non-ASCII input and no declared encoding
+fis.Rd: non-ASCII input and no declared encoding
+global_complexity.Rd: non-ASCII input and no declared encoding
+problems found in ‘MPR_complexity.Rd’, ‘fis.Rd’, ‘global_complexity.Rd’
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  ‘maxd3’ ‘maxd4’ ‘maxd5’ ‘maxd6’ ‘mind3’ ‘mind4’ ‘mind5’ ‘mind6’
+  ‘var.fun’
+Undocumented data sets:
+  ‘.Random.seed’ ‘maxd3’ ‘maxd4’ ‘maxd5’ ‘maxd6’ ‘mind3’ ‘mind4’
+  ‘mind5’ ‘mind6’
+All user-level objects in a package should have documentation entries.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking for code/documentation mismatches ... WARNING
+Codoc mismatches from documentation object 'MPR_complexity':
+permutation_entropy
+  Code: function(opd)
+  Docs: function(odp)
+  Argument names in code not in docs:
+    opd
+  Argument names in docs not in code:
+    odp
+  Mismatches in argument names:
+    Position: 1 Code: opd Docs: odp
+
+Codoc mismatches from documentation object 'adjust_pattern':
+adjust_pattern
+  Code: function(pattern_matrix, adjustment = "jumps")
+  Docs: function(target_pattern, ndemb)
+  Argument names in code not in docs:
+    pattern_matrix adjustment
+  Argument names in docs not in code:
+    target_pattern ndemb
+  Mismatches in argument names:
+    Position: 1 Code: pattern_matrix Docs: target_pattern
+    Position: 2 Code: adjustment Docs: ndemb
+
+Codoc mismatches from documentation object 'fis':
+fis
+  Code: function(opd, discretization = "Olivares.2012")
+  Docs: function(odp, discretization)
+  Argument names in code not in docs:
+    opd
+  Argument names in docs not in code:
+    odp
+  Mismatches in argument names:
+    Position: 1 Code: opd Docs: odp
+  Mismatches in argument default values:
+    Name: 'discretization' Code: "Olivares.2012" Docs: 
+
+Codoc mismatches from documentation object 'permutation_entropy':
+permutation_entropy
+  Code: function(opd)
+  Docs: function(odp, x = NA, ndemb = NA, PatternCoding = "Default")
+  Argument names in code not in docs:
+    opd
+  Argument names in docs not in code:
+    odp x ndemb PatternCoding
+  Mismatches in argument names:
+    Position: 1 Code: opd Docs: odp
+
+Codoc mismatches from documentation object 'rank_to_permutation':
+rank_to_permutation
+  Code: function(pattern, permutation.notation = "Olivares.2012")
+  Docs: function(target_pattern, permutation.notation)
+  Argument names in code not in docs:
+    pattern
+  Argument names in docs not in code:
+    target_pattern
+  Mismatches in argument names:
+    Position: 1 Code: pattern Docs: target_pattern
+  Mismatches in argument default values:
+    Name: 'permutation.notation' Code: "Olivares.2012" Docs: 
+
+Codoc mismatches from documentation object 'transformPermCoding':
+transformPermCoding
+  Code: function(target_pattern = NA, ndemb)
+  Docs: function(target_pattern = "lehmerperm", ndemb = 4)
+  Mismatches in argument default values:
+    Name: 'target_pattern' Code: NA Docs: "lehmerperm"
+    Name: 'ndemb' Code:  Docs: 4
+
+Codoc mismatches from documentation object 'weighted_ordinal_pattern_distribution_2':
+weighted_ordinal_pattern_distribution
+  Code: function(x, ndemb)
+  Docs: function(x, ndemb, weight.fun)
+  Argument names in docs not in code:
+    weight.fun
+
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'MPR_complexity'
+  ‘odp’
+Documented arguments not in \usage in documentation object 'MPR_complexity':
+  ‘opd’
+Objects in \usage without \alias in documentation object 'MPR_complexity':
+  ‘permutation_entropy’
+
+Undocumented arguments in documentation object 'fis'
+  ‘odp’ ‘discretization’
+Documented arguments not in \usage in documentation object 'fis':
+  ‘opd’
+
+Objects in \usage without \alias in documentation object 'ordinal_pattern_distribution_2':
+  ‘ordinal_pattern_distribution’
+
+Undocumented arguments in documentation object 'permutation_entropy'
+  ‘odp’ ‘x’ ‘ndemb’ ‘PatternCoding’
+Documented arguments not in \usage in documentation object 'permutation_entropy':
+  ‘opd’
+
+Undocumented arguments in documentation object 'rank_to_permutation'
+  ‘target_pattern’
+Documented arguments not in \usage in documentation object 'rank_to_permutation':
+  ‘pattern’
+
+Documented arguments not in \usage in documentation object 'weighted_ordinal_pattern_distribution':
+  ‘weight.fun’
+
+Objects in \usage without \alias in documentation object 'weighted_ordinal_pattern_distribution_2':
+  ‘weighted_ordinal_pattern_distribution’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking compiled code ... OK
+* checking examples ... ERROR
+Running examples in ‘statcomp-Ex.R’ failed
+The error most likely occurred in:
+
+> ### Name: MPR_complexity
+> ### Title: A function to compute the MPR-complexity
+> ### Aliases: MPR_complexity
+> 
+> ### ** Examples
+> 
+> x = arima.sim(model=list(ar = 0.3), n = 10^4)
+> opd = ordinal_pattern_distribution(x = x, ndemb = 6)
+Error in .C("ordinal_pattern_loop", as.double(x), as.integer(length(x)),  : 
+  "ordinal_pattern_loop" not resolved from current namespace (statcomp)
+Calls: ordinal_pattern_distribution -> .C
+Execution halted
+* checking PDF version of manual ... OK
+* DONE
+Status: 1 ERROR, 5 WARNINGs, 2 NOTEs
