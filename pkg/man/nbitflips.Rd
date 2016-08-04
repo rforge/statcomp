@@ -4,7 +4,7 @@
 \alias{nbitflips}
 \title{A function to compute bitflip statistics and time series}
 \usage{
-ordinal_pattern_distribution(x, ndemb)
+nbitflips(x, ndemb)
 }
 \arguments{
 \item{x}{A numeric vector (e.g. a time series), from which the ordinal pattern distribution is to be calculated}
