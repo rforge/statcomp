@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <Rdefines.h>
-void weighted_ordinal_pattern_loop(double *x, int *nx, int *ndemb, double *ifrec, int *nifrec, double *Nweighted)
+void weighted_ordinal_pattern_loop(double *x, int *nx, int *ndemb, double *ifrec, int *nifrec)
 {
     int ipa[*ndemb][*ndemb];
     int nd;
@@ -50,7 +50,7 @@ void weighted_ordinal_pattern_loop(double *x, int *nx, int *ndemb, double *ifrec
        ifrec[nd] = ifrec[nd] + variance;
         /* ifrec[nd] = ifrec[nd] + 1; */
         
-        Nweighted = Nweighted + variance; /* N_weighted: Calculates denominator of Eq. 4 in Fadlallah et al (2013) */
+        /* *Nweighted = *Nweighted + variance; N_weighted: Calculates denominator of Eq. 4 in Fadlallah et al (2013) */ 
     }
 }
 
