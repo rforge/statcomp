@@ -5,7 +5,7 @@ require(zoo)
 #' @title A function to compute bitflip statistics and time series
 #' @export
 #' @description Computation of bitflip statistics of a time series
-#' @usage ordinal_pattern_distribution(x, ndemb)
+#' @usage nbitflips(x, ndemb)
 #' @param x A numeric vector (e.g. a time series), from which the ordinal pattern distribution is to be calculated  
 #' @param ndemb Embedding dimension of the ordinal patterns (i.e. sliding window size) for which bitflips are to be calculated. Should be chosen such as length(x) >> ndemb
 #' @details 
