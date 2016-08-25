@@ -23,5 +23,5 @@ LazyData: true
 Imports: zoo
 RoxygenNote: 5.0.1
 NeedsCompilation: yes
-Packaged: 2016-08-25 09:31:12 UTC; ssippel
-Built: R 3.2.4; x86_64-apple-darwin13.4.0; 2016-08-25 09:31:12 UTC; unix
+Packaged: 2016-08-25 09:42:13 UTC; ssippel
+Built: R 3.2.4; x86_64-apple-darwin13.4.0; 2016-08-25 09:42:14 UTC; unix

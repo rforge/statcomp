@@ -31,7 +31,7 @@ ordinal_pattern_distribution = function(x, ndemb) {
            as.integer(length(x)),
            as.integer(ndemb),
            integer(nfac),
-           as.integer(nfac),as.integer(rep(0,length(x))),NAOK=T)[[4]]
+           as.integer(nfac),as.integer(rep(0,length(x))),NAOK=T, PACKAGE="statcomp")[[4]]
   
   # ifrec is the ordinal pattern distribution in the Keller coding scheme!
   return(ifrec)

@@ -38,6 +38,6 @@ Type 'q()' to quit R.
 > x = arima.sim(model=list(ar = 0.3), n = 10^4)
 > opd = ordinal_pattern_distribution(x = x, ndemb = 6)
 Error in .C("ordinal_pattern_loop", as.double(x), as.integer(length(x)),  : 
-  "ordinal_pattern_loop" not resolved from current namespace (statcomp)
+  "ordinal_pattern_loop" not available for .C() for package "statcomp"
 Calls: ordinal_pattern_distribution -> .C
 Execution halted

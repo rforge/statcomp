@@ -38,10 +38,8 @@ Namespace in Imports field not imported from: ‘zoo’
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... WARNING
-Foreign function calls without 'PACKAGE' argument:
+Foreign function call without 'PACKAGE' argument:
   .C("ordinal_pattern_loop", ...)
-  .C("ordinal_pattern_loop", ...)
-  .C("weighted_ordinal_pattern_loop", ...)
 See chapter ‘System and foreign language interfaces’ in the ‘Writing R
 Extensions’ manual.
 * checking R code for possible problems ... NOTE
@@ -196,7 +194,7 @@ The error most likely occurred in:
 > x = arima.sim(model=list(ar = 0.3), n = 10^4)
 > opd = ordinal_pattern_distribution(x = x, ndemb = 6)
 Error in .C("ordinal_pattern_loop", as.double(x), as.integer(length(x)),  : 
-  "ordinal_pattern_loop" not resolved from current namespace (statcomp)
+  "ordinal_pattern_loop" not available for .C() for package "statcomp"
 Calls: ordinal_pattern_distribution -> .C
 Execution halted
 * checking PDF version of manual ... OK
