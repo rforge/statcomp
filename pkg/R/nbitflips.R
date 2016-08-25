@@ -23,7 +23,7 @@ nbitflips <- function(x, ndemb) {
   bitflips = c(as.numeric(sign(diff(x)[1:(length(x)-2)]) != sign(diff(x)[2:(length(x)-1)])))
   
   # number of bitflips in ordinal patterns:
-  bitflips_ts = c(rollapply(data=bitflips, width=ndemb-2, FUN=sum, na.rm=F), rep(NA, ndemb-1))
+  bitflips_ts = c(zoo::rollapply(data=bitflips, width=ndemb-2, FUN=sum, na.rm=F), rep(NA, ndemb-1))
   # get histogram of bitflip time series:
   bins <- numeric(length=(ndemb-1))
   names(bins) <- as.character(0:(ndemb-2))
