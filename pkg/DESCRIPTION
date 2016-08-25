@@ -20,4 +20,5 @@ Depends:
     R (>= 2.7.0)
 License: GPL-2
 LazyData: true
+Imports: zoo
 RoxygenNote: 5.0.1

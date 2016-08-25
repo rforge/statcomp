@@ -20,6 +20,7 @@ Description: An implementation of local and global statistical complexity
 Depends: R (>= 2.7.0)
 License: GPL-2
 LazyData: true
+Imports: zoo
 RoxygenNote: 5.0.1
 NeedsCompilation: yes
-Packaged: 2016-08-04 10:43:58 UTC; ssippel
+Packaged: 2016-08-25 09:31:12 UTC; ssippel

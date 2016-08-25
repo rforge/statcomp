@@ -32,7 +32,9 @@ Authors@R field gives more than one person with maintainer role:
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
 * checking loading without being on the library search path ... OK
-* checking dependencies in R code ... OK
+* checking dependencies in R code ... NOTE
+Namespace in Imports field not imported from: ‘zoo’
+  All declared Imports should be used.
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... WARNING
@@ -199,4 +201,4 @@ Calls: ordinal_pattern_distribution -> .C
 Execution halted
 * checking PDF version of manual ... OK
 * DONE
-Status: 1 ERROR, 5 WARNINGs, 2 NOTEs
+Status: 1 ERROR, 5 WARNINGs, 3 NOTEs
