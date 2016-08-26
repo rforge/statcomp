@@ -5,7 +5,7 @@
 #' @title A function to generate a time series from the logistic map
 #' @export
 #' @description Generates a time series from the logistic map
-#' @usage logistic(N, r, start="rand", disregard_N=0)
+#' @usage logistic_map(N, r, start="rand", disregard_N=0)
 #' @param N length of the time series that is to be generated
 #' @param r logistic map parameter, must be in the range [0,4]
 #' @param start start value. Default is to random.
@@ -14,8 +14,8 @@
 #' @references Rosso et al, 2007, Physical Review Letters.
 #' @author Sebastian Sippel
 #' @examples
-#' logistic(N = 10^4, r=4)
-logistic <- function(N, r=4, start="rand", disregard_N=0) {
+#' logistic_map(N = 10^4, r=4)
+logistic_map <- function(N, r=4, start="rand", disregard_N=0) {
   
   # check startvalue start
   if (start == "rand")  {
@@ -45,7 +45,7 @@ logistic <- function(N, r=4, start="rand", disregard_N=0) {
 #' @title A function to generate a time series from the logistic map
 #' @export
 #' @description Generates a time series from the logistic map
-#' @usage tent(N, mu)
+#' @usage tent_map(N, mu, start="rand", disregard_N=0)
 #' @param N length of the time series that is to be generated
 #' @param mu Tent map parameter, must be in the range [0,2]
 #' @param start start value. Default is to random.
@@ -54,8 +54,8 @@ logistic <- function(N, r=4, start="rand", disregard_N=0) {
 #' @references Feldman, D. P., McTague, C. S., & Crutchfield, J. P. (2008). The organization of intrinsic computation: Complexity-entropy diagrams and the diversity of natural information processing. Chaos: An Interdisciplinary Journal of Nonlinear Science, 18(4), 043106.
 #' @author Sebastian Sippel
 #' @examples
-#' tent(N = 10^4, mu=1.8)
-tent <- function(N, mu = 2, start="rand", disregard_N=0) {
+#' tent_map(N = 10^4, mu=1.8)
+tent_map <- function(N, mu = 2, start="rand", disregard_N=0) {
   
   # check startvalue start
   if (start == "rand")  {
@@ -89,7 +89,7 @@ tent <- function(N, mu = 2, start="rand", disregard_N=0) {
 #' @title A function to generate a time series from the logistic map
 #' @export
 #' @description Generates a time series from the Skew-Tent map
-#' @usage skew_tent(N, a)
+#' @usage skew_tent_map(N, a, start="rand", disregard_N=0)
 #' @param N length of the time series that is to be generated
 #' @param a Skew-Tent map parameter, must be in the range [0,1]
 #' @param start start value. Default is to random.
@@ -98,8 +98,8 @@ tent <- function(N, mu = 2, start="rand", disregard_N=0) {
 #' @references Rosso et al, 2007, Physical Review Letters.
 #' @author Sebastian Sippel
 #' @examples
-#' skew_tent(N = 10^4, a=0.1847)
-skew_tent <- function(N, a=0.1847, start="rand", disregard_N=0) {
+#' skew_tent_map(N = 10^4, a=0.1847)
+skew_tent_map <- function(N, a=0.1847, start="rand", disregard_N=0) {
   
   # check startvalue start
   if (start == "rand")  {
@@ -139,7 +139,7 @@ skew_tent <- function(N, a=0.1847, start="rand", disregard_N=0) {
 #' @title A function to generate a time series from the Henon Map
 #' @export
 #' @description Generates a time series from the Henon map
-#' @usage henon(N, a, b, startx="rand", starty="rand", disregard_N=0)
+#' @usage henon_map(N, a, b, startx="rand", starty="rand", disregard_N=0)
 #' @param N length of the time series that is to be generated
 #' @param a Henon map parameter a
 #' @param b Henon map parameter b
@@ -150,8 +150,8 @@ skew_tent <- function(N, a=0.1847, start="rand", disregard_N=0) {
 #' @references Olivares et al., 2012
 #' @author Sebastian Sippel
 #' @examples
-#' henon(N = 10^4, a=1.4, b=0.3)
-henon <- function(N, a = 1.4, b = 0.3, startx="rand", starty="rand", 
+#' henon_map(N = 10^4, a=1.4, b=0.3)
+henon_map <- function(N, a = 1.4, b = 0.3, startx="rand", starty="rand", 
                   disregard_N=0) {
   
   # check startvalue startx
@@ -203,7 +203,7 @@ henon <- function(N, a = 1.4, b = 0.3, startx="rand", starty="rand",
 #' @title A function to generate a time series from the Schuster Map
 #' @export
 #' @description Generates a time series from the Schuster map
-#' @usage schuster(N, z, start="rand", disregard_N=0)
+#' @usage schuster_map(N, z, start="rand", disregard_N=0)
 #' @param N length of the time series that is to be generated
 #' @param z Schuster map parameter
 #' @param start start value. Default is to random.
@@ -212,8 +212,8 @@ henon <- function(N, a = 1.4, b = 0.3, startx="rand", starty="rand",
 #' @references Rosso et al., 2007, Physical Review Letters
 #' @author Sebastian Sippel
 #' @examples
-#' schuster(N = 10^4, z=2)
-schuster <- function(N, z=2, start="rand", disregard_N=0) {
+#' schuster_map(N = 10^4, z=2)
+schuster_map <- function(N, z=2, start="rand", disregard_N=0) {
   
   # check startvalue start
   if (start == "rand")  {
@@ -247,7 +247,7 @@ schuster <- function(N, z=2, start="rand", disregard_N=0) {
 #' @title A function to generate a time series from the Quadratic map
 #' @export
 #' @description Generates a time series from the Quadradtic map
-#' @usage quadratic(N, z, start="rand", disregard_N=0)
+#' @usage quadratic_map(N, z, start="rand", disregard_N=0)
 #' @param N length of the time series that is to be generated
 #' @param k Quadratic map parameter
 #' @param start start value. Default is to random.
@@ -256,8 +256,8 @@ schuster <- function(N, z=2, start="rand", disregard_N=0) {
 #' @references Grebogi, Celso, Edward Ott, and James A. Yorke. "Crises, sudden changes in chaotic attractors, and transient chaos." Physica D: Nonlinear Phenomena 7.1-3 (1983): 181-200.
 #' @author Sebastian Sippel
 #' @examples
-#' quadratic.sim(N = 10^4, k=1.4)
-quadratic.sim <- function(N, k, start="rand", disregard_N=0) {
+#' quadratic_map(N = 10^4, k=1.4)
+quadratic_map <- function(N, k, start="rand", disregard_N=0) {
   x = numeric(length=N+disregard_N)
   x[1] = runif(1)
   for (i in 2:N) {
