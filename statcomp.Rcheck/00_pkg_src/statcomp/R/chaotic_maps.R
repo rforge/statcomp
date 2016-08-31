@@ -19,7 +19,7 @@ logistic_map <- function(N, r=4, start="rand", disregard_N=0) {
   
   # check startvalue start
   if (start == "rand")  {
-    start = runif(1, min=0, max=1) }
+    start = stats::runif(1, min=0, max=1) }
   if (start >= 1 | start <= 0) {
     print("Start value is not in the range [0,1]")
     return()
@@ -59,7 +59,7 @@ tent_map <- function(N, mu = 2, start="rand", disregard_N=0) {
   
   # check startvalue start
   if (start == "rand")  {
-    start = runif(1, min=0, max=1) }
+    start = stats::runif(1, min=0, max=1) }
   if (start >= 1 | start <= 0) {
     print("Start value is not in the range [0,1]")
     return()
@@ -103,7 +103,7 @@ skew_tent_map <- function(N, a=0.1847, start="rand", disregard_N=0) {
   
   # check startvalue start
   if (start == "rand")  {
-    start = runif(1, min=0, max=1) }
+    start = stats::runif(1, min=0, max=1) }
   if (start >= 1 | start <= 0) {
     print("Start value is not in the range [0,1]")
     return()
@@ -156,7 +156,7 @@ henon_map <- function(N, a = 1.4, b = 0.3, startx="rand", starty="rand",
   
   # check startvalue startx
   if (startx == "rand")  {
-    startx = runif(1, min=0, max=1) }
+    startx = stats::runif(1, min=0, max=1) }
   if (startx >= 1 | startx <= 0) {
     print("Start value x is not in the range ]0,1[")
     return()
@@ -164,7 +164,7 @@ henon_map <- function(N, a = 1.4, b = 0.3, startx="rand", starty="rand",
   
   # check startvalue starty
   if (starty == "rand")  {
-    starty = runif(1, min=0, max=1) }
+    starty = stats::runif(1, min=0, max=1) }
   if (starty >= 1 | starty <= 0) {
     print("Start value y is not in the range ]0,1[")
     return()
@@ -217,7 +217,7 @@ schuster_map <- function(N, z=2, start="rand", disregard_N=0) {
   
   # check startvalue start
   if (start == "rand")  {
-    start = runif(1, min=0, max=1) }
+    start = stats::runif(1, min=0, max=1) }
   if (start >= 1 | start <= 0) {
     print("Start value is not in the range ]0,1[")
     return()
@@ -259,7 +259,7 @@ schuster_map <- function(N, z=2, start="rand", disregard_N=0) {
 #' quadratic_map(N = 10^4, k=1.4)
 quadratic_map <- function(N, k, start="rand", disregard_N=0) {
   x = numeric(length=N+disregard_N)
-  x[1] = runif(1)
+  x[1] = stats::runif(1)
   for (i in 2:N) {
     x[i] = k - x[i-1]^2
   }

@@ -87,7 +87,7 @@ ordinal_pattern_distribution_2 = function(x, ndemb) {
   
   ### Deal with gaps in the sliding window time series:
   # get indices to run through for calculation of complexity measures
-  gapfree = na.omit(sapply(1:(length(x)-ndemb + 1), FUN = function(y) if(!any(is.na(x[y:(y+ndemb-1)]))) return(y) else return(NA)))
+  gapfree = stats::na.omit(sapply(1:(length(x)-ndemb + 1), FUN = function(y) if(!any(is.na(x[y:(y+ndemb-1)]))) return(y) else return(NA)))
   
   epsilon=1.e-10
   npdim=factorial(ndemb)

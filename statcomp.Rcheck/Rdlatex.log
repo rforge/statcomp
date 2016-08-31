@@ -3,9 +3,12 @@ Hmm ... looks like a package
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013)
  restricted \write18 enabled.
 entering extended mode
+
+(/private/var/folders/82/9jk0cs310212kkn6f4pm8ykw0000gp/T/RtmpCrDUbe/Rd2pdf70d1
+1a059bdb/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(./Rd2.tex
+
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk10.clo))
@@ -43,11 +46,11 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 366.
+(hyperref)                setting the option has no effect on input line 361.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 366.
+(hyperref)                setting the option has no effect on input line 361.
 
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/makeidx.sty)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
@@ -66,44 +69,44 @@ No file Rd2.aux.
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
 (/usr/local/texlive/2013/texmf-dist/tex/latex/inconsolata/t1fi4.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1phv.fd)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [1{/usr/local/texl
 ive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [2]
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [3]
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [4]
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [5]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [6]
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [7]
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [8]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [8]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [9]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [10]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [11]
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [12]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [13]
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [14]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [15]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [16]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [17]
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [18]
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [19]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [20]
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [21]
-Overfull \hbox (50.92618pt too wide) in paragraph at lines 1178--1181
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [22]
+Overfull \hbox (50.92618pt too wide) in paragraph at lines 1176--1179
 \T1/ptm/m/n/10 rou-tines and is only main-tained for com-pa-ra-bil-ity. For fas
 ter rou-tines, see [][]weighted_ordinal_pattern_distribution[][][]. 
 No file Rd2.ind.
-[22] (./Rd2.aux)
+[23] (./Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -118,20 +121,23 @@ type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/u
 rw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (22 pages, 105316 bytes).
+Output written on Rd2.pdf (23 pages, 105275 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2013] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (40 entries accepted, 0 rejected).
+Scanning input file ./Rd2.idx....done (40 entries accepted, 0 rejected).
 Sorting entries....done (209 comparisons).
-Generating output file Rd2.ind....done (89 lines written, 1 warning).
-Output written in Rd2.ind.
-Transcript written in Rd2.ilg.
+Generating output file ./Rd2.ind....done (89 lines written, 1 warning).
+Output written in ./Rd2.ind.
+Transcript written in ./Rd2.ilg.
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013)
  restricted \write18 enabled.
 entering extended mode
+
+(/private/var/folders/82/9jk0cs310212kkn6f4pm8ykw0000gp/T/RtmpCrDUbe/Rd2pdf70d1
+1a059bdb/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(./Rd2.tex
+
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk10.clo))
@@ -169,11 +175,11 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 366.
+(hyperref)                setting the option has no effect on input line 361.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 366.
+(hyperref)                setting the option has no effect on input line 361.
 
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/makeidx.sty)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
@@ -192,13 +198,13 @@ Writing index file Rd2.idx
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
 (./Rd2.out) (./Rd2.out)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/inconsolata/t1fi4.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1phv.fd) (./Rd2.toc
 [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [2]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [3]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [4]
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [5]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [6]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
@@ -225,7 +231,7 @@ Writing index file Rd2.idx
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [21]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [22]
-Overfull \hbox (50.92618pt too wide) in paragraph at lines 1178--1181
+Overfull \hbox (50.92618pt too wide) in paragraph at lines 1176--1179
 \T1/ptm/m/n/10 rou-tines and is only main-tained for com-pa-ra-bil-ity. For fas
 ter rou-tines, see [][]weighted_ordinal_pattern_distribution[][][]. 
 (./Rd2.ind [23] [24]) (./Rd2.aux)
@@ -244,20 +250,23 @@ ype1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (24 pages, 118550 bytes).
+Output written on Rd2.pdf (24 pages, 118400 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2013] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (40 entries accepted, 0 rejected).
+Scanning input file ./Rd2.idx....done (40 entries accepted, 0 rejected).
 Sorting entries....done (209 comparisons).
-Generating output file Rd2.ind....done (89 lines written, 1 warning).
-Output written in Rd2.ind.
-Transcript written in Rd2.ilg.
+Generating output file ./Rd2.ind....done (89 lines written, 1 warning).
+Output written in ./Rd2.ind.
+Transcript written in ./Rd2.ilg.
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013)
  restricted \write18 enabled.
 entering extended mode
+
+(/private/var/folders/82/9jk0cs310212kkn6f4pm8ykw0000gp/T/RtmpCrDUbe/Rd2pdf70d1
+1a059bdb/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(./Rd2.tex
+
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk10.clo))
@@ -295,11 +304,11 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 366.
+(hyperref)                setting the option has no effect on input line 361.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 366.
+(hyperref)                setting the option has no effect on input line 361.
 
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/makeidx.sty)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
@@ -318,13 +327,13 @@ Writing index file Rd2.idx
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
 (./Rd2.out) (./Rd2.out)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/inconsolata/t1fi4.fd)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1phv.fd) (./Rd2.toc
 [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [2]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [3]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [4]
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [5]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [6]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
@@ -351,7 +360,7 @@ Writing index file Rd2.idx
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [21]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def) [22]
-Overfull \hbox (50.92618pt too wide) in paragraph at lines 1178--1181
+Overfull \hbox (50.92618pt too wide) in paragraph at lines 1176--1179
 \T1/ptm/m/n/10 rou-tines and is only main-tained for com-pa-ra-bil-ity. For fas
 ter rou-tines, see [][]weighted_ordinal_pattern_distribution[][][]. 
 (./Rd2.ind [23] [24]) (./Rd2.aux) )
@@ -364,8 +373,8 @@ ype1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (24 pages, 119406 bytes).
+Output written on Rd2.pdf (24 pages, 119243 bytes).
 Transcript written on Rd2.log.
 Saving output to 'statcomp-manual.pdf' ...
 Done
-You may want to clean up by 'rm -rf /var/folders/82/9jk0cs310212kkn6f4pm8ykw0000gp/T//RtmpfddlF6/Rd2pdf5f5328d79585'
+You may want to clean up by 'rm -rf /var/folders/82/9jk0cs310212kkn6f4pm8ykw0000gp/T//RtmpCrDUbe/Rd2pdf70d11a059bdb'

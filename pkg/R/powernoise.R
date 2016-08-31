@@ -52,14 +52,14 @@ powernoise <- function(k, N) {
   f = (2:(N2+1))
   A2 = 1/(f^(k/2))
   
-  p2 = complex(real=matrix(rnorm(N2*1,0,1),N2,1), imaginary=matrix(rnorm(N2*1,0,1),N2,1))  #p2 = randn(N2,1) + i * randn(N2,1);
+  p2 = complex(real=matrix(stats::rnorm(N2*1,0,1),N2,1), imaginary=matrix(stats::rnorm(N2*1,0,1),N2,1))  #p2 = randn(N2,1) + i * randn(N2,1);
   d2 = A2*p2;  # d2 = A2.*p2;
   
   d = c(1,d2,1/((N2+2)^k),rev(Conj(d2)))     #d = [1; d2; 1/((N2+2)^k); flipud(conj(d2))];
   
-  x = Re(fft(d, inverse=T))  #x = real(ifft(d));
+  x = Re(stats::fft(d, inverse=T))  #x = real(ifft(d));
   
-  xdft = fft(x)
+  xdft = stats::fft(x)
   xdft = xdft[1:(N/2+1)]
   psd_fft = (1/(2*pi*N))*abs(xdft)^2
   psd_fft[2:(length(psd_fft)-1)] = 2*psd_fft[2:(length(psd_fft)-1)]
@@ -67,8 +67,8 @@ powernoise <- function(k, N) {
   
   
   # make series zero mean and var = 1, and rescale the power spectrum accordingly
-  psp=psd_fft/var(x);
-  x_scaled = (x - mean(x))/sd(x)
+  psp=psd_fft/stats::var(x);
+  x_scaled = (x - mean(x))/stats::sd(x)
   #     x = ((x - min(x))/(max(x) - min(x)) - 0.5) * 2;
   
   ret.list = list(x_scaled,psp,f_fft)

@@ -72,8 +72,8 @@ maximum_limit_curve <- function(ndemb) {
     C_js_neu[i] <- C_js[which(H_s> extract[i] & H_s< extract[i+1])[1]]
   }
   
-  #plot(na.omit(H_s_neu),na.omit(C_js_neu),type='l', xlim=c(0,1),ylim=c(0,0.5))
-  return(list(na.omit(H_s_neu),na.omit(C_js_neu)))
+  #plot(stats::na.omit(H_s_neu),stats::na.omit(C_js_neu),type='l', xlim=c(0,1),ylim=c(0,0.5))
+  return(list(stats::na.omit(H_s_neu),stats::na.omit(C_js_neu)))
 }
   
   

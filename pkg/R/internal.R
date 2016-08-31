@@ -6,7 +6,7 @@
 
 # var.fun: calculates the variance, such as in Fadlallah et al (2013)
 #' @keywords internal
-var.fun = function(x) var(x) * (length(x) - 1) / length(x)
+var.fun = function(x) stats::var(x) * (length(x) - 1) / length(x)
 
 
 # ------------------------------------------------------
