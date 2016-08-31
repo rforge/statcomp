@@ -25,9 +25,7 @@ The Title field should be in title case, current version then in title case:
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
-* checking top-level files ... NOTE
-Non-standard file/directory found at top level:
-  ‘data-raw’
+* checking top-level files ... OK
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -67,7 +65,7 @@ These lines will be truncated in the PDF manual.
 * checking examples ... OK
 Examples with CPU or elapsed time > 5s
             user system elapsed
-nbitflips 14.432  0.493   14.95
+nbitflips 13.786  0.486  14.338
 * checking PDF version of manual ... OK
 * DONE
-Status: 4 NOTEs
+Status: 3 NOTEs

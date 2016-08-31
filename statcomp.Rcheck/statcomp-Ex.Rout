@@ -23311,7 +23311,7 @@ $bitflips_hist
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  14.885 0.616 15.527 0 0 
+Time elapsed:  14.253 0.624 14.944 0 0 
 > grDevices::dev.off()
 null device 
           1 
