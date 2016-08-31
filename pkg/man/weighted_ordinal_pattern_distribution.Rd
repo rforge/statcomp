@@ -10,8 +10,6 @@ weighted_ordinal_pattern_distribution(x, ndemb)
 \item{x}{A numeric vector (e.g. a time series), from which the weighted ordinal pattern distribution is to be calculated}
 
 \item{ndemb}{Embedding dimension of the ordinal patterns (i.e. sliding window size). Should be chosen such as length(x) >> ndemb}
-
-\item{weight.fun}{Function to weight each pattern accordin to a user-specified function. This function must return one value. Default is to 'var.fun', which generates variance-based weights (see Fadlallah et al 2013).}
 }
 \value{
 A character vector of length factorial(ndemb) is returned.
@@ -21,7 +19,8 @@ Computation of weighted ordinal patterns of a time series. Weights can be genera
 }
 \details{
 This function returns the distribution of weighted ordinal patterns using the Keller coding scheme, detailed in Physica A 356 (2005) 114-120. NA values are allowed.
-(Fast) C routines are used for computing weighted ordinal patterns.
+The function uses old and slow R routines and is only maintained for comparability. 
+For faster routines, see \link{weighted_ordinal_pattern_distribution}.
 }
 \examples{
 x = arima.sim(model=list(ar = 0.3), n = 10^4)
@@ -32,5 +31,8 @@ Sebastian Sippel
 }
 \references{
 Fadlallah et al (2013). PHYSICAL REVIEW E 87, 022911 (2013)
+}
+\seealso{
+\code{\link{weighted_ordinal_pattern_distribution}}
 }
 
