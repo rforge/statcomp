@@ -21,7 +21,7 @@ Computation of bitflip statistics of a time series
 This function returns a histogram and time series of the number of bitflips occurring in the associated ordinal patterns. NA values are allowed, and any pattern that contains at least one NA value will be ignored. WARNING: Can be slow with very long time series (n > 10^7).
 }
 \examples{
-x = arima.sim(model=list(ar = 0.3), n = 10^6)
+x = arima.sim(model=list(ar = 0.3), n = 10^4)
 nbitflips(x = x, ndemb = 6)
 }
 \author{

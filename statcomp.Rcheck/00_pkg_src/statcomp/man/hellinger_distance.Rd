@@ -21,7 +21,9 @@ Compute the Hellinger Distance
 This function returns a distance measure.
 }
 \examples{
-hellinger_distance(p=ordinal_pattern_distribution(rnorm(10000), ndemb = 5), q= ordinal_pattern_distribution(arima.sim(model=list(ar=0.9), n= 10000), ndemb = 5))
+p = ordinal_pattern_distribution(rnorm(10000), ndemb = 5)
+q = ordinal_pattern_distribution(arima.sim(model=list(ar=0.9), n= 10000), ndemb = 5)
+hellinger_distance(p=p, q = q)
 }
 \author{
 Sebastian Sippel

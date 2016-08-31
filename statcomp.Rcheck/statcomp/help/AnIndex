@@ -4,6 +4,7 @@ generate_lehmerperm_matrix	generate_lehmerperm_matrix
 global_complexity	global_complexity
 hellinger_distance	hellinger_distance
 henon_map	henon_map
+jensen_shannon_divergence	jensen_shannon_divergence
 limit_curves	limit_curves
 logistic_map	logistic_map
 maxd3	maxd3

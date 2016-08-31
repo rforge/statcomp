@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  31 AUG 2016 10:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  31 AUG 2016 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -724,24 +724,15 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [5]
-Overfull \hbox (324.78088pt too wide) in paragraph at lines 254--254
- []\T1/fi4/m/n/9 hellinger_distance(p=ordinal_pattern_distribution(rnorm(10000)
-, ndemb = 5), q= ordinal_pattern_distribution(arima.sim(model=list(ar=0.9), n= 
-10000), ndemb = 5))[] 
- []
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [6]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [7]
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)
+) [7]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [8]
@@ -765,16 +756,19 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [11]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [12]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [13]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)
+) [14]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [14]
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [15]
@@ -786,10 +780,10 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [17]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)
+) [18]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [18]
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [19]
@@ -798,36 +792,39 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [20]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [21]
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [21]
-Overfull \hbox (50.92618pt too wide) in paragraph at lines 1132--1135
+) [22]
+Overfull \hbox (50.92618pt too wide) in paragraph at lines 1178--1181
 \T1/ptm/m/n/10 rou-tines and is only main-tained for com-pa-ra-bil-ity. For fas
 ter rou-tines, see [][]weighted_ordinal_pattern_distribution[][][]. 
  []
 
-(./Rd2.ind [22]
+(./Rd2.ind [23]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 3.
- [23
+ [24
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1160.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1160.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1206.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1206.
  (./Rd2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1160.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1160.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1206.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1206.
 
 Package rerunfilecheck Info: File `Rd2.out' has not changed.
-(rerunfilecheck)             Checksum: 1746530B3B17978923B74C5D5A94BDBD;1920.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1160.
+(rerunfilecheck)             Checksum: E8A2E05A282B875063DE9A1C925FB2D9;2017.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1206.
  ) 
 Here is how much of TeX's memory you used:
- 6653 strings out of 493315
- 97696 string characters out of 6137904
- 170810 words of memory out of 5000000
- 9675 multiletter control sequences out of 15000+600000
+ 6667 strings out of 493315
+ 98032 string characters out of 6137904
+ 171810 words of memory out of 5000000
+ 9676 multiletter control sequences out of 15000+600000
  40998 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,6n,34p,328b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -840,10 +837,10 @@ xlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on Rd2.pdf (23 pages, 117322 bytes).
+Output written on Rd2.pdf (24 pages, 119406 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 570 compressed objects within 6 object streams
- 275 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 629 PDF objects out of 1000 (max. 8388607)
+ 590 compressed objects within 6 object streams
+ 286 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 

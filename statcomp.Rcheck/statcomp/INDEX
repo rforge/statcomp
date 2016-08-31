@@ -12,6 +12,10 @@ hellinger_distance      Distance measure between ordinal pattern
                         distributions: Hellinger distance
 henon_map               A function to generate a time series from the
                         Henon Map
+jensen_shannon_divergence
+                        Generalized disequilibrium measure for ordinal
+                        pattern distributions based on the
+                        Jensen-Shannon Divergence
 limit_curves            Limit curves in the Entropy-Complexity plane
 logistic_map            A function to generate a time series from the
                         logistic map

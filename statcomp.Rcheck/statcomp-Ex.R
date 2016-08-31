@@ -96,7 +96,9 @@ base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 
 ### ** Examples
 
-hellinger_distance(p=ordinal_pattern_distribution(rnorm(10000), ndemb = 5), q= ordinal_pattern_distribution(arima.sim(model=list(ar=0.9), n= 10000), ndemb = 5))
+p = ordinal_pattern_distribution(rnorm(10000), ndemb = 5)
+q = ordinal_pattern_distribution(arima.sim(model=list(ar=0.9), n= 10000), ndemb = 5)
+hellinger_distance(p=p, q = q)
 
 
 
@@ -121,6 +123,28 @@ henon_map(N = 10^4, a=1.4, b=0.3)
 
 base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
 base::cat("henon_map", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
+cleanEx()
+nameEx("jensen_shannon_divergence")
+### * jensen_shannon_divergence
+
+flush(stderr()); flush(stdout())
+
+base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+### Name: jensen_shannon_divergence
+### Title: Generalized disequilibrium measure for ordinal pattern
+###   distributions based on the Jensen-Shannon Divergence
+### Aliases: jensen_shannon_divergence
+
+### ** Examples
+
+p = ordinal_pattern_distribution(rnorm(10000), ndemb = 5)
+q = ordinal_pattern_distribution(arima.sim(model=list(ar=0.9), n= 10000), ndemb = 5)
+jensen_shannon_divergence(p = p, q = q)
+
+
+
+base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+base::cat("jensen_shannon_divergence", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 cleanEx()
 nameEx("logistic_map")
 ### * logistic_map
@@ -153,7 +177,7 @@ base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 
 ### ** Examples
 
-x = arima.sim(model=list(ar = 0.3), n = 10^6)
+x = arima.sim(model=list(ar = 0.3), n = 10^4)
 nbitflips(x = x, ndemb = 6)
 
 

@@ -14,7 +14,7 @@ require(zoo)
 #' @references Sippel, S., Master Thesis, University of Bayreuth, 2014.
 #' @author Sebastian Sippel
 #' @examples
-#' x = arima.sim(model=list(ar = 0.3), n = 10^6)
+#' x = arima.sim(model=list(ar = 0.3), n = 10^4)
 #' nbitflips(x = x, ndemb = 6)
 ### Determine number of bitflips in a time series
 nbitflips <- function(x, ndemb) {

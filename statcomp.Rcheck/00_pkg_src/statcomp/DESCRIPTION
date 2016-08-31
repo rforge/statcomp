@@ -1,6 +1,6 @@
 Package: statcomp
-Title: Statistical Complexity and Information measures for time series
-        analysis
+Title: Statistical Complexity and Information Measures for Time Series
+        Analysis
 Version: 0.0.0.9000
 Authors@R: c(person("Sebastian", "Sippel", , "ssippel@bgc-jena.mpg.de", role = c("aut", "cre")), person("Holger", "Lange", , "Holger.Lange@nibio.no", role = c("aut")), person("Fabian", "Gans", , "fgans@bgc-jena.mpg.de", role = c("aut")))
 Author: Sebastian Sippel [aut, cre], Holger Lange [aut], Fabian Gans [aut]
@@ -23,4 +23,4 @@ LazyData: true
 Imports: zoo
 RoxygenNote: 5.0.1
 NeedsCompilation: yes
-Packaged: 2016-08-31 08:23:50 UTC; ssippel
+Packaged: 2016-08-31 08:49:46 UTC; ssippel

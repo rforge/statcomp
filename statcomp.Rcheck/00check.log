@@ -8,13 +8,8 @@
 * checking CRAN incoming feasibility ... NOTE
 Maintainer: ‘Sebastian Sippel <ssippel@bgc-jena.mpg.de>’
 New submission
-
-The Title field should be in title case, current version then in title case:
-‘Statistical Complexity and Information measures for time series analysis’
-‘Statistical Complexity and Information Measures for Time Series Analysis’
 * checking package namespace information ... OK
-* checking package dependencies ... NOTE
-  No repository set, so cyclic dependency check skipped
+* checking package dependencies ... OK
 * checking if this is a source package ... OK
 * checking if there is a namespace ... OK
 * checking for executable files ... OK
@@ -45,12 +40,7 @@ The Title field should be in title case, current version then in title case:
 * checking R code for possible problems ... OK
 * checking Rd files ... OK
 * checking Rd metadata ... OK
-* checking Rd line widths ... NOTE
-Rd file 'hellinger_distance.Rd':
-  \examples lines wider than 100 characters:
-     hellinger_distance(p=ordinal_pattern_distribution(rnorm(10000), ndemb = 5), q= ordinal_pattern_distribution(arima.sim(model=list(ar=0.9 ... [TRUNCATED]
-
-These lines will be truncated in the PDF manual.
+* checking Rd line widths ... OK
 * checking Rd cross-references ... OK
 * checking for missing documentation entries ... OK
 * checking for code/documentation mismatches ... OK
@@ -63,9 +53,6 @@ These lines will be truncated in the PDF manual.
 * checking line endings in C/C++/Fortran sources/headers ... OK
 * checking compiled code ... OK
 * checking examples ... OK
-Examples with CPU or elapsed time > 5s
-            user system elapsed
-nbitflips 13.786  0.486  14.338
 * checking PDF version of manual ... OK
 * DONE
-Status: 3 NOTEs
+Status: 1 NOTE
