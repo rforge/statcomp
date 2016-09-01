@@ -31,6 +31,7 @@ fis(opd = opd)
 Sebastian Sippel
 }
 \references{
-Olivares et al (2012): Physica A 391 (2012) 2518-2526, Olivares et al (2012): Physics Letters A 376 (2012) 1577-1583, Ferri et al (2009): Phys. Lett. A 373 (2009) 2210-2214.
+Olivares, F., Plastino, A. and Rosso, O.A., 2012. Ambiguities in Bandt-Pompe's methodology for local entropic quantifiers. Physica A: Statistical Mechanics and its Applications, 391(8), pp.2518-2526.
+Ferri, G.L., Pennini, F. and Plastino, A., 2009. LMC-complexity and various chaotic regimes. Physics Letters A, 373(26), pp.2210-2214.
 }
 

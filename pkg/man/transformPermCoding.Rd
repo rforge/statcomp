@@ -28,6 +28,6 @@ transformPermCoding(target_pattern = "lehmerperm", ndemb = 4)
 Sebastian Sippel
 }
 \references{
-see e.g. Olivares et al. 2012
+Olivares, F., Plastino, A. and Rosso, O.A., 2012. Ambiguities in Bandt-Pompe's methodology for local entropic quantifiers. Physica A: Statistical Mechanics and its Applications, 391(8), pp.2518-2526.
 }
 

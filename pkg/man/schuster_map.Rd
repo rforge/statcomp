@@ -28,6 +28,6 @@ schuster_map(N = 10^4, z=2)
 Sebastian Sippel
 }
 \references{
-Rosso et al., 2007, Physical Review Letters
+Schuster, H.G., 1988. Deterministic chaos. An Introduction.
 }
 

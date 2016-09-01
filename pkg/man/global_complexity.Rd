@@ -38,8 +38,8 @@ global_complexity(opd = opd, ndemb = 6)
 Sebastian Sippel
 }
 \references{
-Bandt and Pompe (2002): Physical Review Letters 88 (2002), 174102-1-174102-4.
-Martin, Plastino and Rosse (2006): Physica A 369 (2006) 439-462
-Amigo (2010): Permutation Complexity in Dynamical Systems. Springer. ISBN 978-3-642-04083-2
+Bandt, C. and Pompe, B., 2002. Permutation entropy: a natural complexity measure for time series. Physical review letters, 88(17), p.174102.
+Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
+Amigo, J., 2010. Permutation complexity in dynamical systems: ordinal patterns, permutation entropy and all that. Springer Science & Business Media.
 }
 

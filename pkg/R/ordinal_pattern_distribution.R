@@ -13,7 +13,7 @@
 #' This function returns the distribution of ordinal patterns using the Keller coding scheme, detailed in Physica A 356 (2005) 114-120. NA values are allowed, and any pattern that contains at least one NA value will be ignored.
 #' (Fast) C routines are used for computing ordinal patterns.
 #' @return A character vector of length factorial(ndemb) is returned.
-#' @references Bandt and Pompe, 2002.
+#' @references Bandt, C. and Pompe, B., 2002. Permutation entropy: a natural complexity measure for time series. Physical review letters, 88(17), p.174102.
 #' @author Sebastian Sippel
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)
@@ -51,7 +51,7 @@ ordinal_pattern_distribution = function(x, ndemb) {
 #' This function returns the distribution of ordinal patterns using the Keller coding scheme, detailed in Physica A 356 (2005) 114-120. NA values are allowed, and any pattern that contains at least one NA value will be ignored.
 #' (Fast) C routines are used for computing ordinal patterns.
 #' @return A character vector of length(x) is returned.
-#' @references Bandt and Pompe, 2002.
+#' @references Bandt, C. and Pompe, B., 2002. Permutation entropy: a natural complexity measure for time series. Physical review letters, 88(17), p.174102.
 #' @author Sebastian Sippel
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)

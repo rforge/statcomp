@@ -28,6 +28,6 @@ nbitflips(x = x, ndemb = 6)
 Sebastian Sippel
 }
 \references{
-Sippel, S., Master Thesis, University of Bayreuth, 2014.
+Sippel, S., 2014. Evaluating the carbon dynamics of biogeochemical models using statistical complexity measures. Master Thesis, University of Bayreuth.
 }
 

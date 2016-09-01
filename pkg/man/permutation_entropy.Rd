@@ -28,6 +28,6 @@ permutation_entropy(opd)
 Sebastian Sippel
 }
 \references{
-Bandt and Pompe, 2002.
+Bandt, C. and Pompe, B., 2002. Permutation entropy: a natural complexity measure for time series. Physical review letters, 88(17), p.174102.
 }
 

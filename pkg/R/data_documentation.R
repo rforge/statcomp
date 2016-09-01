@@ -13,7 +13,7 @@
 #'   \item{y}{y-values of minimum curve if ndemb==3}
 #'   ...
 #' }
-#' @source Computed based on Martin, M. T., A. Plastino, and O. A. Rosso. "Generalized statistical complexity measures: Geometrical and analytical properties." Physica A: Statistical Mechanics and its Applications 369.2 (2006): 439-462.
+#' @source Computed based on Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
 "mind3"
 
 
@@ -25,7 +25,7 @@
 #'   \item{y}{y-values of minimum curve if ndemb==4}
 #'   ...
 #' }
-#' @source Computed based on Martin, M. T., A. Plastino, and O. A. Rosso. "Generalized statistical complexity measures: Geometrical and analytical properties." Physica A: Statistical Mechanics and its Applications 369.2 (2006): 439-462.
+#' @source Computed based on Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
 "mind4"
 
 
@@ -37,7 +37,7 @@
 #'   \item{y}{y-values of minimum curve if ndemb==5}
 #'   ...
 #' }
-#' @source Computed based on Martin, M. T., A. Plastino, and O. A. Rosso. "Generalized statistical complexity measures: Geometrical and analytical properties." Physica A: Statistical Mechanics and its Applications 369.2 (2006): 439-462.
+#' @source Computed based on Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
 "mind5"
 
 
@@ -49,7 +49,7 @@
 #'   \item{y}{y-values of minimum curve if ndemb==6}
 #'   ...
 #' }
-#' @source Computed based on Martin, M. T., A. Plastino, and O. A. Rosso. "Generalized statistical complexity measures: Geometrical and analytical properties." Physica A: Statistical Mechanics and its Applications 369.2 (2006): 439-462.
+#' @source Computed based on Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
 "mind6"
 
 
@@ -61,7 +61,7 @@
 #'   \item{y}{y-values of minimum curve if ndemb==3}
 #'   ...
 #' }
-#' @source Computed based on Martin, M. T., A. Plastino, and O. A. Rosso. "Generalized statistical complexity measures: Geometrical and analytical properties." Physica A: Statistical Mechanics and its Applications 369.2 (2006): 439-462.
+#' @source Computed based on Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
 "maxd3"
 
 
@@ -73,7 +73,7 @@
 #'   \item{y}{y-values of minimum curve if ndemb==4}
 #'   ...
 #' }
-#' @source Computed based on Martin, M. T., A. Plastino, and O. A. Rosso. "Generalized statistical complexity measures: Geometrical and analytical properties." Physica A: Statistical Mechanics and its Applications 369.2 (2006): 439-462.
+#' @source Computed based on Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
 "maxd4"
 
 
@@ -85,7 +85,7 @@
 #'   \item{y}{y-values of minimum curve if ndemb==5}
 #'   ...
 #' }
-#' @source Computed based on Martin, M. T., A. Plastino, and O. A. Rosso. "Generalized statistical complexity measures: Geometrical and analytical properties." Physica A: Statistical Mechanics and its Applications 369.2 (2006): 439-462.
+#' @source Computed based on Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
 "maxd5"
 
 
@@ -97,6 +97,6 @@
 #'   \item{y}{y-values of minimum curve if ndemb==6}
 #'   ...
 #' }
-#' @source Computed based on Martin, M. T., A. Plastino, and O. A. Rosso. "Generalized statistical complexity measures: Geometrical and analytical properties." Physica A: Statistical Mechanics and its Applications 369.2 (2006): 439-462.
+#' @source Computed based on Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
 "maxd6"
 

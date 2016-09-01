@@ -28,6 +28,6 @@ tent_map(N = 10^4, mu=1.8)
 Sebastian Sippel
 }
 \references{
-Feldman, D. P., McTague, C. S., & Crutchfield, J. P. (2008). The organization of intrinsic computation: Complexity-entropy diagrams and the diversity of natural information processing. Chaos: An Interdisciplinary Journal of Nonlinear Science, 18(4), 043106.
+Feldman, D.P., McTague, C.S. and Crutchfield, J.P., 2008. The organization of intrinsic computation: Complexity-entropy diagrams and the diversity of natural information processing. Chaos: An Interdisciplinary Journal of Nonlinear Science, 18(4), p.043106.
 }
 

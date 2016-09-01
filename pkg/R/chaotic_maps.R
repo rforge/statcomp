@@ -11,7 +11,7 @@
 #' @param start start value. Default is to random.
 #' @param disregard_N Number of values at the beginning of the series to disregard  
 #' @return A vector of length N
-#' @references Rosso et al, 2007, Physical Review Letters.
+#' @references May, R.M., 1976. Simple mathematical models with very complicated dynamics. Nature, 261(5560), pp.459-467.
 #' @author Sebastian Sippel
 #' @examples
 #' logistic_map(N = 10^4, r=4)
@@ -51,7 +51,7 @@ logistic_map <- function(N, r=4, start="rand", disregard_N=0) {
 #' @param start start value. Default is to random.
 #' @param disregard_N Number of values at the beginning of the series to disregard  
 #' @return A vector of length N
-#' @references Feldman, D. P., McTague, C. S., & Crutchfield, J. P. (2008). The organization of intrinsic computation: Complexity-entropy diagrams and the diversity of natural information processing. Chaos: An Interdisciplinary Journal of Nonlinear Science, 18(4), 043106.
+#' @references Feldman, D.P., McTague, C.S. and Crutchfield, J.P., 2008. The organization of intrinsic computation: Complexity-entropy diagrams and the diversity of natural information processing. Chaos: An Interdisciplinary Journal of Nonlinear Science, 18(4), p.043106.
 #' @author Sebastian Sippel
 #' @examples
 #' tent_map(N = 10^4, mu=1.8)
@@ -95,7 +95,7 @@ tent_map <- function(N, mu = 2, start="rand", disregard_N=0) {
 #' @param start start value. Default is to random.
 #' @param disregard_N Number of values at the beginning of the series to disregard  
 #' @return A vector of length N
-#' @references Rosso et al, 2007, Physical Review Letters.
+#' @references Schuster, H.G., 1988. Deterministic chaos. An Introduction.
 #' @author Sebastian Sippel
 #' @examples
 #' skew_tent_map(N = 10^4, a=0.1847)
@@ -147,7 +147,7 @@ skew_tent_map <- function(N, a=0.1847, start="rand", disregard_N=0) {
 #' @param starty start value in y direction. Default is to random.
 #' @param disregard_N Number of values at the beginning of the series to disregard  
 #' @return A vector of length N
-#' @references Olivares et al., 2012
+#' @references Schuster, H.G., 1988. Deterministic chaos. An Introduction.
 #' @author Sebastian Sippel
 #' @examples
 #' henon_map(N = 10^4, a=1.4, b=0.3)
@@ -209,7 +209,7 @@ henon_map <- function(N, a = 1.4, b = 0.3, startx="rand", starty="rand",
 #' @param start start value. Default is to random.
 #' @param disregard_N Number of values at the beginning of the series to disregard  
 #' @return A vector of length N
-#' @references Rosso et al., 2007, Physical Review Letters
+#' @references Schuster, H.G., 1988. Deterministic chaos. An Introduction.
 #' @author Sebastian Sippel
 #' @examples
 #' schuster_map(N = 10^4, z=2)
@@ -253,7 +253,7 @@ schuster_map <- function(N, z=2, start="rand", disregard_N=0) {
 #' @param start start value. Default is to random.
 #' @param disregard_N Number of values at the beginning of the series to disregard  
 #' @return A vector of length N
-#' @references Grebogi, Celso, Edward Ott, and James A. Yorke. "Crises, sudden changes in chaotic attractors, and transient chaos." Physica D: Nonlinear Phenomena 7.1-3 (1983): 181-200.
+#' @references Grebogi, C., Ott, E. and Yorke, J.A., 1983. Crises, sudden changes in chaotic attractors, and transient chaos. Physica D: Nonlinear Phenomena, 7(1-3), pp.181-200.
 #' @author Sebastian Sippel
 #' @examples
 #' quadratic_map(N = 10^4, k=1.4)

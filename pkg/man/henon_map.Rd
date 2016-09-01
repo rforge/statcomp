@@ -32,6 +32,6 @@ henon_map(N = 10^4, a=1.4, b=0.3)
 Sebastian Sippel
 }
 \references{
-Olivares et al., 2012
+Schuster, H.G., 1988. Deterministic chaos. An Introduction.
 }
 

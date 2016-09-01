@@ -14,7 +14,7 @@
 #' The function uses old and slow R routines and is only maintained for comparability. 
 #' For faster routines, see \link{weighted_ordinal_pattern_distribution}.
 #' @return A character vector of length factorial(ndemb) is returned.
-#' @references Fadlallah et al (2013). PHYSICAL REVIEW E 87, 022911 (2013)
+#' @references Fadlallah, B., Chen, B., Keil, A. and Principe, J., 2013. Weighted-permutation entropy: A complexity measure for time series incorporating amplitude information. Physical Review E, 87(2), p.022911.
 #' @author Sebastian Sippel
 #' @seealso \code{\link{weighted_ordinal_pattern_distribution}}
 #' @examples

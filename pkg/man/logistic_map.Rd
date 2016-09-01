@@ -28,6 +28,6 @@ logistic_map(N = 10^4, r=4)
 Sebastian Sippel
 }
 \references{
-Rosso et al, 2007, Physical Review Letters.
+May, R.M., 1976. Simple mathematical models with very complicated dynamics. Nature, 261(5560), pp.459-467.
 }
 

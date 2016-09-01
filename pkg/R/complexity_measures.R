@@ -21,7 +21,7 @@
 #' @details
 #' This function calculates the permutation entropy as described in Bandt and Pompe 2002.
 #' @return The normalized permutation entropy as a numeric value in the range [0,1].
-#' @references Bandt and Pompe, 2002.
+#' @references Bandt, C. and Pompe, B., 2002. Permutation entropy: a natural complexity measure for time series. Physical review letters, 88(17), p.174102.
 #' @author Sebastian Sippel
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)
@@ -47,7 +47,7 @@ permutation_entropy = function(opd) {
 #' Generalized complexity measures combine an information measure (i.e. entropy) with the distance of the distribution from the uniform distribution ("disequilibrium").
 #' As a global measure, MPR-complexity is insensitive to the permutation coding scheme.
 #' @return The normalized MPR complexity measure in the range [0, 1].
-#' @references Martin, M. T., A. Plastino, and O. A. Rosso. "Generalized statistical complexity measures: Geometrical and analytical properties." Physica A: Statistical Mechanics and its Applications 369.2 (2006): 439-462.
+#' @references Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
 #' @author Sebastian Sippel
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)
@@ -119,9 +119,9 @@ MPR_complexity = function(opd) {
 #' }
 #' @return A named vector containing the three global complexity measures.
 #' @references
-#' Bandt and Pompe (2002): Physical Review Letters 88 (2002), 174102-1-174102-4.
-#' Martin, Plastino and Rosse (2006): Physica A 369 (2006) 439-462
-#' Amigo (2010): Permutation Complexity in Dynamical Systems. Springer. ISBN 978-3-642-04083-2
+#' Bandt, C. and Pompe, B., 2002. Permutation entropy: a natural complexity measure for time series. Physical review letters, 88(17), p.174102.
+#' Martin, M.T., Plastino, A. and Rosso, O.A., 2006. Generalized statistical complexity measures: Geometrical and analytical properties. Physica A: Statistical Mechanics and its Applications, 369(2), pp.439-462.
+#' Amigo, J., 2010. Permutation complexity in dynamical systems: ordinal patterns, permutation entropy and all that. Springer Science & Business Media.
 #' @author Sebastian Sippel
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)
@@ -179,7 +179,8 @@ shannon_entropy = function(opd) {
 #' The Fisher information is based on local gradients, hence it is sensitive to the permutation coding scheme.
 #' Options for discretization: 'Olivares.2012' or 'Ferri.2009', following Fisher Information discretization schemes in the respective publications.
 #' @return The normalized Fisher information measure in the range [0, 1].
-#' @references Olivares et al (2012): Physica A 391 (2012) 2518-2526, Olivares et al (2012): Physics Letters A 376 (2012) 1577-1583, Ferri et al (2009): Phys. Lett. A 373 (2009) 2210-2214.
+#' @references Olivares, F., Plastino, A. and Rosso, O.A., 2012. Ambiguities in Bandt-Pompe's methodology for local entropic quantifiers. Physica A: Statistical Mechanics and its Applications, 391(8), pp.2518-2526.
+#' Ferri, G.L., Pennini, F. and Plastino, A., 2009. LMC-complexity and various chaotic regimes. Physics Letters A, 373(26), pp.2210-2214.
 #' @author Sebastian Sippel
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)

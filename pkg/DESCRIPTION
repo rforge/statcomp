@@ -4,18 +4,7 @@ Version: 0.0.1.1000
 Authors@R: c(person("Sebastian", "Sippel", , "ssippel@bgc-jena.mpg.de", role = c("aut", "cre")), person("Holger", "Lange", , "Holger.Lange@nibio.no", role = c("aut")), person("Fabian", "Gans", , "fgans@bgc-jena.mpg.de", role = c("aut")))
 Author: Sebastian Sippel [aut, cre], Holger Lange [aut], Fabian Gans [aut]
 Maintainer: Sebastian Sippel <ssippel@bgc-jena.mpg.de>
-Description: An implementation of local and global statistical complexity
-    measures for time series analysis in R. The package provides functions to
-    compute Information Theory Quantifiers (ITQ's), i.e. statistical complexity and information measures for any given time
-    series based on ordinal pattern statistics (Bandt and Pompe 2002). The ordinal pattern
-    statistics are used to calculate a variety of global (Permutation Entropy, MPR
-    complexity) and local (Fisher Information) complexity and information measures
-    (for further information, see Martin, Plastino and Rosso 2006; Olivares et al
-    2012). In addition, methods to derive variance-weighted ordinal pattern distributions (see e.g. Fadlallah et al 2013), 
-    and several distance measures (Hellinger distance, Jensen-Shannon divergence) are supplied.
-    Deterministic-chaotic maps and stochastic processes are available for testing. 
-    Complexity and information measures constitute a simple, quick and powerful tool to classify and cluster (a
-    large number of) time series, including for model-data comparisons.
+Description: An implementation of local and global statistical complexity measures (aka Information Theory Quantifiers, ITQ) for time series analysis based on ordinal statistics (Bandt and Pompe (2002) <DOI:10.1103/PhysRevLett.88.174102>). Several distance measures that operate on ordinal pattern distributions, auxiliary functions for ordinal pattern analysis, and generating functions for stochastic and deterministic-chaotic processes for ITQ testing are provided.
 Depends:
     R (>= 2.7.0)
 License: GPL-2

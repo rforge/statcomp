@@ -11,7 +11,7 @@
 #' @details 
 #' This function returns a histogram and time series of the number of bitflips occurring in the associated ordinal patterns. NA values are allowed, and any pattern that contains at least one NA value will be ignored. WARNING: Can be slow with very long time series (n > 10^7).
 #' @return A list with two entries is returned.
-#' @references Sippel, S., Master Thesis, University of Bayreuth, 2014.
+#' @references Sippel, S., 2014. Evaluating the carbon dynamics of biogeochemical models using statistical complexity measures. Master Thesis, University of Bayreuth.
 #' @author Sebastian Sippel
 #' @examples
 #' x = arima.sim(model=list(ar = 0.3), n = 10^4)

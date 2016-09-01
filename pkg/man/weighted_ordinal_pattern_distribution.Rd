@@ -30,7 +30,7 @@ weighted_ordinal_pattern_distribution(x = x, ndemb = 6)
 Sebastian Sippel
 }
 \references{
-Fadlallah et al (2013). PHYSICAL REVIEW E 87, 022911 (2013)
+Fadlallah, B., Chen, B., Keil, A. and Principe, J., 2013. Weighted-permutation entropy: A complexity measure for time series incorporating amplitude information. Physical Review E, 87(2), p.022911.
 }
 \seealso{
 \code{\link{weighted_ordinal_pattern_distribution}}

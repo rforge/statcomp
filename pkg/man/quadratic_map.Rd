@@ -28,6 +28,6 @@ quadratic_map(N = 10^4, k=1.4)
 Sebastian Sippel
 }
 \references{
-Grebogi, Celso, Edward Ott, and James A. Yorke. "Crises, sudden changes in chaotic attractors, and transient chaos." Physica D: Nonlinear Phenomena 7.1-3 (1983): 181-200.
+Grebogi, C., Ott, E. and Yorke, J.A., 1983. Crises, sudden changes in chaotic attractors, and transient chaos. Physica D: Nonlinear Phenomena, 7(1-3), pp.181-200.
 }
 

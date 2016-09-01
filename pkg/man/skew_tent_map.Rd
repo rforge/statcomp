@@ -28,6 +28,6 @@ skew_tent_map(N = 10^4, a=0.1847)
 Sebastian Sippel
 }
 \references{
-Rosso et al, 2007, Physical Review Letters.
+Schuster, H.G., 1988. Deterministic chaos. An Introduction.
 }
 

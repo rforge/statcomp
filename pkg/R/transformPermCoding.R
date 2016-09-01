@@ -18,7 +18,7 @@
 #' This function returns a character vector to transform the output of ordinal_pattern_distribution (permutation coding as of Keller and Sinn, 2005) into a user-specified permutation coding scheme.
 #' For example, pattern #5 in "lehmerperm" (ndemb = 5) is given by the ranks c(0, 1, 4, 2, 3). This corresponds to pattern #41 in the (original) Keller coding scheme, as given by transformPermCoding(target_pattern = "lehmerperm", ndemb = 5)[5].
 #' @return A numeric vector of length factorial(ndemb), which contains the positions of the corresponding patterns in the Keller Coding scheme. 
-#' @references see e.g. Olivares et al. 2012
+#' @references Olivares, F., Plastino, A. and Rosso, O.A., 2012. Ambiguities in Bandt-Pompe's methodology for local entropic quantifiers. Physica A: Statistical Mechanics and its Applications, 391(8), pp.2518-2526.
 #' @author Sebastian Sippel
 #' @examples
 #' transformPermCoding(target_pattern = "lehmerperm", ndemb = 4)
@@ -48,7 +48,7 @@ transformPermCoding <- function(target_pattern, ndemb) {
 #' @details 
 #' This function reorders permutations based on "jumps" or based on "bitflips".
 #' @return A numeric matrix that contains the permutation matrix.
-#' @references Sebastian Sippel (2014). Master Thesis. University of Bayreuth.
+#' @references Sebastian Sippel, 2014. Master Thesis. University of Bayreuth.
 #' @author Sebastian Sippel
 adjust_pattern <- function(pattern_matrix, adjustment = "jumps") {
   if (adjustment == "jumps") {

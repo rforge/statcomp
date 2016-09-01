@@ -24,6 +24,6 @@ This function reorders permutations based on "jumps" or based on "bitflips".
 Sebastian Sippel
 }
 \references{
-Sebastian Sippel (2014). Master Thesis. University of Bayreuth.
+Sebastian Sippel, 2014. Master Thesis. University of Bayreuth.
 }
 
