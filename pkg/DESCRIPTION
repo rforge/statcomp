@@ -1,6 +1,6 @@
 Package: statcomp
 Title: Statistical Complexity and Information Measures for Time Series Analysis
-Version: 0.0.0.9000
+Version: 0.0.1.1000
 Authors@R: c(person("Sebastian", "Sippel", , "ssippel@bgc-jena.mpg.de", role = c("aut", "cre")), person("Holger", "Lange", , "Holger.Lange@nibio.no", role = c("aut")), person("Fabian", "Gans", , "fgans@bgc-jena.mpg.de", role = c("aut")))
 Author: Sebastian Sippel [aut, cre], Holger Lange [aut], Fabian Gans [aut]
 Maintainer: Sebastian Sippel <ssippel@bgc-jena.mpg.de>
