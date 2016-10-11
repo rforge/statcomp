@@ -31,7 +31,7 @@
   <li>statcomp - applications and examples:</li>
   <ul>
 		<li><a href="statcomp_example1.html">Tutorial 1: Classification of Deterministic-chaotic and stochastic processes using the Entropy-Complexity (HxC) plane </a></li>
-    <li><a href="statcomp_example1.html">Tutorial 2: Classification of Deterministic-chaotic and stochastic processes using the Entropy-Fisher (HxF) plane </a></li>
+    <li><a href="statcomp_example2.html">Tutorial 2: Classification of Deterministic-chaotic and stochastic processes using the Entropy-Fisher (HxF) plane </a></li>
 	</ul>
 	<li><a href="http://r-forge.r-project.org/projects/statcomp/">Project summary page</a></li>
 </ul>
@@ -117,18 +117,7 @@ skew_tent.complexity <- sapply(X=skew_tent.par, FUN=function(par) get.complexity
 ```r
 henon_ts = henon_map(N=10^4, disregard_N=1000)
 henon.complexity.x <- get.complexity(x=henon_ts$x_ts, ndemb = 6)
-```
-
-```
-## Error in if (prob >= 1e-30) return(prob * log(prob)) else return(0): missing value where TRUE/FALSE needed
-```
-
-```r
 henon.complexity.y <- get.complexity(x=henon_ts$y_ts, ndemb = 6)
-```
-
-```
-## Error in if (prob >= 1e-30) return(prob * log(prob)) else return(0): missing value where TRUE/FALSE needed
 ```
 
 - knoise
