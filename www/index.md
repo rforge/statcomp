@@ -44,6 +44,7 @@ Statistical complexity and information measures are statistical tools to quantif
 </p>
 
 <h4><p> Related papers: </h4>
+Lopez-Ruiz, R., Mancini, H. L. & Calbet, X., 1995. A statistical measure of complexity. _Physics Letters A_, 209. doi:10.1016/0375-9601(95)00867-5. <br>
 Bandt, C. and Pompe, B., 2002. Permutation entropy: a natural complexity measure for time series. _Physical Review Letters_, 88(17). doi:10.1103/PhysRevLett.88.174102. <br>
 Rosso, O. A., Larrondo, H. A., Martin, M. T., Plastino, A., & Fuentes, M. A. (2007). Distinguishing noise from chaos. _Physical Review Letters_, 99(15). doi:10.1103/PhysRevLett.99.154102.  <br>
 Olivares, F., Plastino, A. and Rosso, O.A., 2012. Ambiguities in Bandt-Pompe's methodology for local entropic quantifiers. _Physica A: Statistical Mechanics and its Applications_, 391(8). doi:10.1016/j.physa.2011.12.033. <br>
