@@ -1,7 +1,7 @@
 ## Create time series of chaotic maps to test Information Theory Quantifiers
 # ---------------------------------------------
 
-### Logistic Map
+### Logistic Map:
 #' @title A function to generate a time series from the logistic map
 #' @export
 #' @description Generates a time series from the logistic map
