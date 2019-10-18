@@ -11,6 +11,21 @@
 # Permutation Entropy based on q-log:
 # ----------------------------------------------------
 
+#' @title A function to compute q-log permutation entropy
+#' @export
+#' @description q-log permutation entropy
+#' @usage permutation_entropy_qlog(opd, q)
+#' @param opd A numeric vector that details an ordinal pattern distribution.
+#' @param q q-log parameter
+#' @details
+#' This function calculates the q-log permutation entropy as described in Ribeiro et al. 2017.
+#' @return The q-log permutation entropy value.
+#' @references Ribeiro et al. 2017, https://arxiv.org/abs/1705.04779.
+#' @author Sebastian Sippel
+#' @examples
+#' x = arima.sim(model=list(ar = 0.3), n = 10^4)
+#' opd = ordinal_pattern_distribution(x = x, ndemb = 6)
+#' permutation_entropy_qlog(opd = opd, q = 1)
 permutation_entropy_qlog = function(opd, q) {
   # maximum Shannon Entropy is uniform distribution:
   # ssmax  = log( length(opd) )
@@ -22,19 +37,19 @@ permutation_entropy_qlog = function(opd, q) {
 }
 
 # compute non-normalized Shannon Entropy:
+#' @keywords internal
 shannon_entropy_qlog = function(opd, q) {
   opd.prob = opd / sum(opd)
   H_s = sum(sapply(opd.prob, FUN=function(prob) if (prob >= 1.e-30) return(prob * (q_log(x = 1 / prob, q = q))) else return(0)))
   return(H_s)
 }
-
-
 # test = rnorm(10000)
 # test_opd = ordinal_pattern_distribution(test, ndemb = 5)
 # shannon_entropy_qlog(opd = test_opd, q = 1)
 
 
 # get q-logarithm
+#' @keywords internal
 q_log <- function(x, q) {
   if ( x == 0) return(0)
   
@@ -50,6 +65,21 @@ q_log <- function(x, q) {
 # ----------------------------------------------------
 # q_complexity:
 # ----------------------------------------------------
+#' @title A function to compute q-log complexity
+#' @export
+#' @description q-log complexity
+#' @usage q_complexity(opd, q)
+#' @param opd A numeric vector that details an ordinal pattern distribution.
+#' @param q q-log parameter
+#' @details
+#' This function calculates the q-log complexity as described in Ribeiro et al. 2017.
+#' @return The q-log complexity value.
+#' @references Ribeiro et al. 2017, https://arxiv.org/abs/1705.04779.
+#' @author Sebastian Sippel
+#' @examples
+#' x = arima.sim(model=list(ar = 0.3), n = 10^4)
+#' opd = ordinal_pattern_distribution(x = x, ndemb = 6)
+#' q_complexity(opd = opd, q = 1)
 q_complexity = function(opd, q) {
   
  

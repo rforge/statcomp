@@ -1,13 +1,11 @@
 Package: statcomp
 Title: Statistical Complexity and Information Measures for Time Series Analysis
-Version: 0.1.0.0000
-Authors@R: c(person("Sebastian", "Sippel", , "sebastian.sippel@env.ethz.ch", role = c("aut", "cre"), comment = "Supported by MPI Biogeochemistry, BGI Department"), person("Holger", "Lange", , "Holger.Lange@nibio.no", role = c("aut")), person("Fabian", "Gans", , "fgans@bgc-jena.mpg.de", role = c("aut"), comment = "Original package development was supported by MPI Biogeochemistry, BGI Department"))
-Author: Sebastian Sippel [aut, cre], Holger Lange [aut], Fabian Gans [aut]
-Maintainer: Sebastian Sippel <sebastian.sippel@env.ethz.ch>
+Version: 0.1.0
+Authors@R: c(person("Sebastian", "Sippel", , "sebastian.sippel@env.ethz.ch", role = c("aut", "cre"), comment = "Original package development was supported by MPI Biogeochemistry, BGI Department"), person("Holger", "Lange", , "Holger.Lange@nibio.no", role = c("aut")), person("Fabian", "Gans", , "fgans@bgc-jena.mpg.de", role = c("aut")))
 Description: An implementation of local and global statistical complexity measures (aka Information Theory Quantifiers, ITQ) for time series analysis based on ordinal statistics (Bandt and Pompe (2002) <DOI:10.1103/PhysRevLett.88.174102>). Several distance measures that operate on ordinal pattern distributions, auxiliary functions for ordinal pattern analysis, and generating functions for stochastic and deterministic-chaotic processes for ITQ testing are provided. 
 Depends:
     R (>= 2.7.0)
 License: GPL-2
 LazyData: true
-Imports: stats, zoo
+Imports: stats, zoo, Matrix, graphics
 RoxygenNote: 6.1.1

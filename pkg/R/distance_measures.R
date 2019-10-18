@@ -75,7 +75,7 @@ jensen_shannon_divergence = function(p,q="unif") {
   
   j_s =0
   ## Assign uniform distribution to vector q if not specified otherwise
-  if (q=="unif") {q <- rep(1, times=length(p))
+  if (q[[1]]=="unif") {q <- rep(1, times=length(p))
                   print("Second vector not specified: Use Uniform Distribution in q!")}
   
   if (length(which(p<0)) != 0 | length(which(q<0)) != 0) {
