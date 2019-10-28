@@ -27,7 +27,7 @@ Following Luque, B., Lacasa, L., Ballesteros, F. and Luque, J., 2009. Horizontal
 ATTENTION: This function is still in development and needs further testing!
 }
 \examples{
-x = arima.sim(model=list(ar = 0.3), n = 10^4)
+x = arima.sim(model=list(ar = 0.3), n = 10^2)
 HVG(x, meth = "HVG", maxL = 10^9, rho = NA)
 }
 \references{
