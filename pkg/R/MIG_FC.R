@@ -62,7 +62,7 @@ get.sym.words <- function(sym.seq, L) {
 get.MIG_FC <- function(wL, wLp1) {
   n=length(wL)
   if(n != length(wLp1)/2) {
-    print('dimensions of wL and wLp1 are not in a 1:2 ratio!')
+    message('dimensions of wL and wLp1 are not in a 1:2 ratio!')
     return(NULL) }
   
   pijmat = matrix(data=0, nrow = n, ncol=n) # zeros(n,n);pi_jmat=zeros(n,n);
@@ -72,7 +72,7 @@ get.MIG_FC <- function(wL, wLp1) {
     for (j in (2*i-1):(2*i)) {
       pijmat[i,j-n*floor(j/(n+0.5))]=wLp1[j]/ant
       pi_jmat[i,j-n*floor(j/(n+0.5))]=wLp1[j]/wL[i]
-      # print(j)
+      # message(j)
     }
   }
   
@@ -86,7 +86,7 @@ get.MIG_FC <- function(wL, wLp1) {
       if(wL[i]>0 && wL[j]>0) {
         ausfc = pijmat[i,j] * log2(wL[i]/wL[j])^2  # ; %disp(aus);
         fluc = fluc+ausfc }
-      # print(j)
+      # message(j)
     }
   }
   ret.list = list(migi, fluc, pijmat, pi_jmat)

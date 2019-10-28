@@ -29,7 +29,7 @@ HVG <- function(x, meth = "HVG", maxL = 10^9, rho = NA) {
   N = length(y) # ; % time-series length
   
   if ( N > maxL ) {
-    print("Time series is too long for visibility graph!")
+    message("Time series is too long for visibility graph!")
     return(NULL)
   }
   
@@ -55,7 +55,7 @@ HVG <- function(x, meth = "HVG", maxL = 10^9, rho = NA) {
     #  deltay = 
     
     #}
-    print("Not implemented at the moment")
+    message("Not implemented at the moment")
     return(NULL)
   }
   
